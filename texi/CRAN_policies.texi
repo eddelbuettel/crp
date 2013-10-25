@@ -11,8 +11,19 @@
 @end titlepage
 
 @ifnottex
-@node Top,  , (dir), (dir)
+@node Top, Preamble, (dir), (dir)
+
+@menu
+* Preamble::                    
+* Source packages::             
+* Binary packages::             
+* Submission::                  
+@end menu
+
 @end ifnottex
+
+@node Preamble, Source packages, Top, Top
+@unnumbered Preamble
 
 This document describes the policies in place for the
 @url{http://www.R-project.org/, R} package repository hosted by the
@@ -22,9 +33,10 @@ In what follows, this CRAN package repository will be referred to as
 
 CRAN is maintained by the efforts of volunteers (the ``CRAN team'') and
 the resources of the R Foundation and the employers of those volunteers
-(WU Wien, TU Dortmund, U Oxford, AT&T Research).  Having a package on
-CRAN is subject to a set of policies, and submitting a package
-(including an update) to CRAN indicates agreement to these policies.
+(WU Wien, TU Dortmund, U Oxford, AT&T Research).  Having a package
+distributed by CRAN is subject to a set of policies, and submitting a
+package (including an update) to CRAN indicates agreement to these
+policies.
 
 Distributing code or documentation is subject to legal requirements,
 and CRAN operates in many jurisdictions.  One of the aims of these
@@ -34,6 +46,9 @@ obligations of diligence without excessive work.
 The time of the volunteers is CRAN's most precious resource, and they
 reserve the right to remove or modify packages on CRAN without notice
 or explanation (although notification will usually be given).
+
+@node Source packages, Binary packages, Preamble, Top
+@unnumbered Source packages
 
 @itemize @bullet
 
@@ -99,10 +114,11 @@ accompanied by the written agreement of the previous maintainer
 Packages will not normally be removed from CRAN: however, they may
 be archived, including at the maintainer's request.
 
-Packages for which @command{R CMD check} gives an ERROR when a new R
-@math{x.y.0} version is released will be archived (or in exceptional
-circumstances updated by the CRAN team) unless the maintainer has set a
-firm deadline for an upcoming update (and keeps to it).
+Packages for which @command{R CMD check} gives an @samp{ERROR} when a
+new R @math{x.y.0} version is released will be archived (or in
+exceptional circumstances updated by the CRAN team) unless the
+maintainer has set a firm deadline for an upcoming update (and keeps to
+it).
 
 @item
 Packages should be of the minimum necessary size.  Reasonable
@@ -186,11 +202,14 @@ nor send any information to such sites without obtaining confirmation
 from the user.
 
 @end itemize
+@end itemize
 
-@item
+@node Binary packages, Submission, Source packages, Top
+@unnumbered Binary packages
+
 Policies for when a (Windows or OS X) binary package will be distributed:
 
-@itemize @minus
+@itemize
 
 @item
 all its package dependencies on CRAN are available for that platform.
@@ -212,10 +231,12 @@ sub-architecture(s).
 Binary packages are not accepted from maintainers: CRAN will only host
 binary packages prepared by those responsible for the binary areas.
 
-@item
+@node Submission,  , Binary packages, Top
+@unnumbered Submission
+
 When submitting a package to CRAN:
 
-@itemize @minus
+@itemize
 
 @item
 Uploads must be source tarballs as created by @command{R CMD build} and
@@ -236,8 +257,6 @@ Part of the processing is that unsuccessful uploads are renamed to
 @file{@var{PACKAGE}_@var{VERSION}.tar.gz.save}: the presence of such a
 file is a sign that a submission is still pending (and such a name
 should never be uploaded).
-
-@end itemize
 
 @end itemize
 
