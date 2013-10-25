@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-07-11 06:45:48 -0500 (Wed, 11 Jul 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2710 $
+@set CRAN_POLICY_DATE $Date: 2012-07-11 06:55:07 -0500 (Wed, 11 Jul 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2711 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -20,8 +20,8 @@
 @ifnottex
 @c <FIXME>
 @c Maybe there is a better way?
-@c @center (Draft version), Version @value{CRAN_POLICY_REVISION}  (@value{CRAN_POLICY_DATE})
-@center (Draft version), Version @value{CRAN_POLICY_REVISION}
+@c @center Version @value{CRAN_POLICY_REVISION}  (@value{CRAN_POLICY_DATE})
+@center Version @value{CRAN_POLICY_REVISION}
 @c </FIXME>
 
 @center @b{CRAN Repository Maintainers}
