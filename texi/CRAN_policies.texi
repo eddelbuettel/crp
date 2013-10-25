@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-08-21 00:50:14 -0500 (Tue, 21 Aug 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2728 $
+@set CRAN_POLICY_DATE $Date: 2012-09-03 03:15:14 -0500 (Mon, 03 Sep 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2730 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -208,6 +208,9 @@ installation (e.g., scripts to its @file{bin} directory) is not allowed.
 
 Limited exceptions may be allowed in interactive sessions if the
 package obtains confirmation from the user.
+
+@item
+Packages should not modify the global environment (user's workspace).
 
 @item
 Packages should not start external software (such as PDF viewers or
