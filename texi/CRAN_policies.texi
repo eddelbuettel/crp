@@ -6,7 +6,7 @@
 
 @titlepage
 @title CRAN Repository Policy
-@subtitle (Draft version)
+@subtitle (Draft version), Version $Revision: 2662 $ ($Date: 2012-03-20 12:33:13 -0500 (Tue, 20 Mar 2012) $)
 @author CRAN Repository Maintainers
 @end titlepage
 
