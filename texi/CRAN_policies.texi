@@ -254,9 +254,10 @@ spurious) send an explanatory note as part of your covering email.
 
 @item
 For a package update, please check that any packages depending on this
-one still pass @code{R CMD check}: it is particularly important that you
-check your own packages.  A listing of the reverse dependencies of the
-current version can be found on the CRAN web page for the package.
+one still pass @code{R CMD check}: it is especially expected that you
+will have checked your own packages.  A listing of the reverse
+dependencies of the current version can be found on the CRAN web page
+for the package.
 
 @item
 A submission should be accompanied by an email to
