@@ -15,3 +15,8 @@ Gábor Csárdi sent me an email mentioning the actual SVN repo of the CRAN web
 site. The repo contains the actual source, so on 24 Oct 2013 I added a new
 shell script to retrieve all versions still in the SVN repo (going back Dec
 2011). I will update the monitoring script to simply use SVN as well.
+
+So for now, the best view of the evolution may be the history of the texi
+source, eg via
+
+   https://github.com/eddelbuettel/crp/commits/master/texi
