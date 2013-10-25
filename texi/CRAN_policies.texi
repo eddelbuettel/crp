@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-09-09 02:33:41 -0500 (Sun, 09 Sep 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2733 $
+@set CRAN_POLICY_DATE $Date: 2012-11-13 06:11:57 -0600 (Tue, 13 Nov 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2753 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -75,6 +75,10 @@ the authors specification in the @file{DESCRIPTION} file).  Where code
 is copied (or derived) from the work of others (including from R
 itself), care must be taken that any copyright/license statements are
 preserved and authorship is not misrepresented.
+
+Where copyrights are held by an entity other than the authors, the
+@code{Authors@@R} field can be used, or a @code{Copyright} field (if
+necessary referring to an @file{inst/COPYRIGHTS} file).
 
 Trademarks must be respected.
 
@@ -317,7 +321,7 @@ maintainer will need to confirm the submission.
 
 For a new submission, confirm in your email that you have read and agree
 to these policies.  (This includes new versions of previously archived
-packages.)
+packages, and the first submission as the new maintainer for a package.)
 
 Do not email the package itself.
 
