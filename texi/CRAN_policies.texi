@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-07-14 09:31:38 -0500 (Sat, 14 Jul 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2712 $
+@set CRAN_POLICY_DATE $Date: 2012-07-14 09:39:29 -0500 (Sat, 14 Jul 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2713 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -270,12 +270,10 @@ Please ensure that you can run through the complete procedure with only
 warnings that you understand and have reasons not to eliminate.  In
 principle, packages must pass @code{R CMD check} without warnings to be
 admitted to the main @acronym{CRAN} package area.  If there are warnings
-you cannot eliminate (for example because you believe them to be
-spurious) send an explanatory note as part of your covering email.
+or significant notes you cannot eliminate (for example because you
+believe them to be spurious) send an explanatory note as part of your
+covering email.
 @end quotation
-
-@noindent
-Similarly, eliminate all the notes you can before submission.
 
 @item
 For a package update, please check that any packages depending on this
