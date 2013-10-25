@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-07-22 05:36:24 -0500 (Sun, 22 Jul 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2720 $
+@set CRAN_POLICY_DATE $Date: 2012-07-30 04:40:26 -0500 (Mon, 30 Jul 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2722 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -73,8 +73,8 @@ The ownership of copyright and intellectual property rights of all
 components of the package must be clear and unambiguous (including from
 the authors specification in the @file{DESCRIPTION} file).  Where code
 is copied (or derived) from the work of others (including from R
-itself), care must be taken that any copyright statements are preserved
-and authorship is not misrepresented.
+itself), care must be taken that any copyright/license statements are
+preserved and authorship is not misrepresented.
 
 Trademarks must be respected.
 
