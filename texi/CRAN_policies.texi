@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-07-11 06:55:07 -0500 (Wed, 11 Jul 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2711 $
+@set CRAN_POLICY_DATE $Date: 2012-07-14 09:31:38 -0500 (Sat, 14 Jul 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2712 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -169,6 +169,10 @@ If running a package uses multiple threads/cores it must never use more
 than two simultaneously: the check farm is a shared resource and will
 typically be running many checks simultaneously.
 
+Examples should run for no more than a few seconds each: they are
+intended to exemplify to the would-be user how to use the functions in
+the package.
+
 
 @item
 The code and examples provided in a package should never do anything
@@ -256,10 +260,10 @@ Uploads must be source tarballs as created by @command{R CMD build} and
 follow the @file{@var{PACKAGE}_@var{VERSION}.tar.gz} naming scheme.
 
 @item
-Please ensure that @command{R CMD check} has been run @emph{on the
-tarball to be uploaded} before submission.  This should be done with the
-current release of R or (preferably) R-devel or R-patched. As ``Writing
-R Extensions'' says
+Please ensure that @command{R CMD check --as-cran} has been run @emph{on
+the tarball to be uploaded} before submission.  This should be done with
+the current release of R or (preferably) R-devel or R-patched. As
+``Writing R Extensions'' says
 
 @quotation
 Please ensure that you can run through the complete procedure with only
@@ -270,6 +274,9 @@ you cannot eliminate (for example because you believe them to be
 spurious) send an explanatory note as part of your covering email.
 @end quotation
 
+@noindent
+Similarly, eliminate all the notes you can before submission.
+
 @item
 For a package update, please check that any packages depending on this
 one still pass @code{R CMD check}: it is especially expected that you
@@ -279,7 +286,7 @@ for the package.
 
 @item
 A submission should be accompanied by an email to
-@email{CRAN@@R-project.org}, if possible sent from the maintainer
+@email{CRAN@@R-project.org} sent from the maintainer
 address listed in the package, and  using the subject line 
 `CRAN submission @var{PACKAGE} @var{VERSION}', where @var{PACKAGE} and
 @var{VERSION} are the package name and version, respectively.
@@ -287,6 +294,9 @@ address listed in the package, and  using the subject line
 If for some reason the submission has to be made by someone else (for
 example, a co-author) this needs to be explained, and the designated
 maintainer will need to confirm the submission.
+
+For a new submission, confirm in your email that you have read and agree
+to these policies.
 
 @item
 Once uploaded, no further submissions of that package should be made
