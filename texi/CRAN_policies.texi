@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-07-22 03:38:37 -0500 (Sun, 22 Jul 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2719 $
+@set CRAN_POLICY_DATE $Date: 2012-07-22 05:36:24 -0500 (Sun, 22 Jul 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2720 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -235,8 +235,9 @@ discretion.
 
 @item
 any external software needed can easily be installed on the build
-machine: here ``easily'' includes not depending on specific versions,
-nor should the installed binary depend on specific versions.
+machine for all the sub-architectures: here ``easily'' includes not
+depending on specific versions, nor should the installed binary depend
+on specific versions.
 
 @item
 it passes @command{R CMD check} without error for all the available
@@ -247,6 +248,9 @@ sub-architecture(s).
 
 Binary packages are not accepted from maintainers: CRAN will only host
 binary packages prepared by those responsible for the binary areas.
+Their packages are made automatically by batch jobs and can take a day
+or two to appear on the CRAN master site (maybe longer to reach CRAN
+mirrors).
 
 @node Submission,  , Binary packages, Top
 @unnumbered Submission
