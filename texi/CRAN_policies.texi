@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-04-16 05:53:46 -0500 (Mon, 16 Apr 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2677 $
+@set CRAN_POLICY_DATE $Date: 2012-04-20 10:11:56 -0500 (Fri, 20 Apr 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2678 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -315,6 +315,12 @@ affected packages and suggest changes, and give them time to prepare
 updates before submitting your updated package.  Do mention in
 the submission email which packages are affected and that their
 maintainers have been informed.
+In order to derive the reverse dependencies of a package including the 
+addresses of maintainers who have to be notified upon changes, the 
+function @url{http://developer.r-project.org/CRAN/Scripts/depends.R, 
+reverse_dependencies_with_maintainers} is available from the developer 
+website. 
+
 
 @end itemize
 
