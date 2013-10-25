@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2013-03-21 10:11:01 -0500 (Thu, 21 Mar 2013) $
-@set CRAN_POLICY_REVISION $Revision: 2834 $
+@set CRAN_POLICY_DATE $Date: 2013-04-24 11:40:47 -0500 (Wed, 24 Apr 2013) $
+@set CRAN_POLICY_REVISION $Revision: 2857 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -350,13 +350,15 @@ Do not email the package itself.
 @item
 Once uploaded, no further submissions of that package should be made
 whilst the uploaded version is pending processing (which may take a
-few days).
+few days) and you have not received a reply from a CRAN maintainer.
 
 @item
 Part of the processing is that uploads may be renamed by adding one of
 the extensions @file{.save}, @file{.pending} or @file{.noemail}:  the
-presence of such a file is a sign that a submission is still pending
-(and such a file name should never be uploaded).
+presence of such a file is a sign that the submission process is not 
+finished yet and CRAN maintainers are waiting for response or 
+resubmission from the package maintainer (and such a file name should 
+never be uploaded).
 
 @item
 Submitting updates should be done responsibly and with respect for the
