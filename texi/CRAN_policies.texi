@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2013-10-23 10:11:09 -0500 (Wed, 23 Oct 2013) $
-@set CRAN_POLICY_REVISION $Revision: 2934 $
+@set CRAN_POLICY_DATE $Date: 2013-10-23 10:15:25 -0500 (Wed, 23 Oct 2013) $
+@set CRAN_POLICY_REVISION $Revision: 2935 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -385,11 +385,11 @@ check a package before submission.  There is a lot of helpful advice on
 writing portable packages in @url{../../doc/manuals/R-exts.html,
 ``Writing R Extensions''}.
 
-After a submission, consult the CRAN check page at
+Before submitting a package update, consult the CRAN check page at
 @uref{http://cran.r-project.org/web/checks/check_results_NAME.html},
 substituting NAME by the name of your package.  In particular, wait for
-that page to be fully updated (which can take at least 48 hours) before
-submitting any corrections.
+that page to be fully updated after publication of a version (which can
+take at least 48 hours) before submitting any corrections.
 
 @item
 If an update will change the package's API and hence affect packages
