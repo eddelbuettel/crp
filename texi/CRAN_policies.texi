@@ -288,7 +288,8 @@ rounds), ``no more than every 1--2 months'' seems appropriate.
 
 Authors can avoid a lot of the all too frequent rounds of updates by
 checking carefully for themselves.  It should be normal for those
-without Windows machines of their own to use the winbuilder service to
+without Windows machines of their own to use the
+@url{http://win-builder.R-project.org/, winbuilder} service to
 check a package before submission.  There is a lot of helpful advice on
 writing portable packages in @url{../../doc/manuals/R-exts.html,
 ``Writing R Extensions''}.
@@ -297,9 +298,9 @@ writing portable packages in @url{../../doc/manuals/R-exts.html,
 If an update will change the package's API and hence affect packages
 depending on it, it is expected that you will contact the maintainers of
 affected packages and suggest changes, and give them time to prepare
-updates before submitting your updated package.  Do mention which
-packages are affected and that their maintainers have been informed in
-the submission email.
+updates before submitting your updated package.  Do mention in
+the submission email which packages are affected and that their
+maintainers have been informed.
 
 @end itemize
 
