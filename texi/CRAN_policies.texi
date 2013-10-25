@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-07-14 09:39:29 -0500 (Sat, 14 Jul 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2713 $
+@set CRAN_POLICY_DATE $Date: 2012-07-22 03:38:37 -0500 (Sun, 22 Jul 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2719 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -251,7 +251,9 @@ binary packages prepared by those responsible for the binary areas.
 @node Submission,  , Binary packages, Top
 @unnumbered Submission
 
-When submitting a package to CRAN:
+When submitting a package to CRAN you should upload by anonymous
+@command{ftp} to @uref{ftp://CRAN.R-project.org/@/incoming/} and send an
+email at the same time.  In more detail:
 
 @itemize
 
@@ -268,11 +270,11 @@ the current release of R or (preferably) R-devel or R-patched. As
 @quotation
 Please ensure that you can run through the complete procedure with only
 warnings that you understand and have reasons not to eliminate.  In
-principle, packages must pass @code{R CMD check} without warnings to be
-admitted to the main @acronym{CRAN} package area.  If there are warnings
-or significant notes you cannot eliminate (for example because you
-believe them to be spurious) send an explanatory note as part of your
-covering email.
+principle, packages must pass @code{R CMD check} without warnings or
+significant notes to be admitted to the main @acronym{CRAN} package
+area.  If there are warnings or notes you cannot eliminate (for example
+because you believe them to be spurious) send an explanatory note as
+part of your covering email.
 @end quotation
 
 @item
@@ -295,6 +297,8 @@ maintainer will need to confirm the submission.
 
 For a new submission, confirm in your email that you have read and agree
 to these policies.
+
+Do not email the package itself.
 
 @item
 Once uploaded, no further submissions of that package should be made
