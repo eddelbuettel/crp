@@ -240,8 +240,8 @@ follow the @file{@var{PACKAGE}_@var{VERSION}.tar.gz} naming scheme.
 @item
 Please ensure that @command{R CMD check} has been run @emph{on the
 tarball to be uploaded} before submission.  This should be done with the
-current release of R or (preferably) R-devel or R-patched. As `Writing R
-Extensions' says
+current release of R or (preferably) R-devel or R-patched. As ``Writing
+R Extensions'' says
 
 @quotation
 Please ensure that you can run through the complete procedure with only
@@ -296,9 +296,9 @@ writing portable packages in @url{../../doc/manuals/R-exts.html,
 If an update will change the package's API and hence affect packages
 depending on it, it is expected that you will contact the maintainers of
 affected packages and suggest changes, and give them time to prepare
-updates before submitting your updated package.  Do also mention which
-packages are affected and that they have been informed in the submission
-email.
+updates before submitting your updated package.  Do mention which
+packages are affected and that their maintainers have been informed in
+the submission email.
 
 @end itemize
 
