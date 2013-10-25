@@ -4,13 +4,18 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
+
 @titlepage
 @title CRAN Repository Policy
-@subtitle (Draft version), Version $Revision: 2662 $ ($Date: 2012-03-20 12:33:13 -0500 (Tue, 20 Mar 2012) $)
+@subtitle (Draft version), Version $Revision: 2663 $ ($Date: 2012-03-20 14:11:41 -0500 (Tue, 20 Mar 2012) $)
 @author CRAN Repository Maintainers
 @end titlepage
 
 @ifnottex
+@center (Draft version), Version $Revision: 2663 $ ($Date: 2012-03-20 14:11:41 -0500 (Tue, 20 Mar 2012) $)
+
+@center @b{CRAN Repository Maintainers}
+
 @node Top, Preamble, (dir), (dir)
 
 @menu
