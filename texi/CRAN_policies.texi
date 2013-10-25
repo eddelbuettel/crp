@@ -141,8 +141,8 @@ consideration should be given to a separate data-only package which
 can be updated only rarely (since older versions of packages are
 archived in perpetuity).
 
-Similar considerations apply to other forms of ``data'', e.g., jar
-files.
+Similar considerations apply to other forms of ``data'', e.g.,
+@code{jar} files.
 
 @item
 Checking the package should take as little CPU time as possible, as the
