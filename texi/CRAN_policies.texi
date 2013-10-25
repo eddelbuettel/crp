@@ -191,9 +191,9 @@ browsers) during examples or tests unless that specific instance of
 the software is explicitly closed afterwards.
 
 @item
-Packages should not contact the maintainer's or third-party sites
-nor send any information to such sites without obtaining confirmation
-from the user.
+Packages should not send information about the R session to the
+maintainer's or third-party sites without obtaining confirmation from
+the user.
 
 @end itemize
 @end itemize
