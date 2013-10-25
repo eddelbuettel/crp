@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-08-21 00:48:59 -0500 (Tue, 21 Aug 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2727 $
+@set CRAN_POLICY_DATE $Date: 2012-08-21 00:50:14 -0500 (Tue, 21 Aug 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2728 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -93,7 +93,7 @@ used in accordance with the license granted by the original author).
 Additional @file{DESCRIPTION} fields could be used for providing email
 addresses for contacting the package authors/developers (e.g.,
 @samp{Contact}), or a URL for submitting bug reports (e.g.,
-@samp{BugReport}).
+@samp{BugReports}).
 
 @item
 Source packages may not contain any form of binary executable code.
