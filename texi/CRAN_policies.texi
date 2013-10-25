@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2013-08-19 05:21:11 -0500 (Mon, 19 Aug 2013) $
-@set CRAN_POLICY_REVISION $Revision: 2908 $
+@set CRAN_POLICY_DATE $Date: 2013-09-10 02:28:32 -0500 (Tue, 10 Sep 2013) $
+@set CRAN_POLICY_REVISION $Revision: 2912 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -339,7 +339,8 @@ if at all possible.
 If for some reason the submission has to be made by someone else (for
 example, a co-author) this needs to be explained, and the designated
 maintainer will need to confirm the submission.  Explain any change in
-the maintainer's email address.
+the maintainer's email address and if possible send confirmation from
+the previous address.
 
 For a new submission, confirm in your email that you have read and agree
 to these policies.  (This includes new versions of previously archived
