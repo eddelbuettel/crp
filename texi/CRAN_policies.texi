@@ -4,15 +4,17 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
+@set CRAN_POLICY_DATE $Date: 2012-03-23 04:09:09 -0500 (Fri, 23 Mar 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2665 $
 
 @titlepage
 @title CRAN Repository Policy
-@subtitle (Draft version), Version $Revision: 2663 $ ($Date: 2012-03-20 14:11:41 -0500 (Tue, 20 Mar 2012) $)
+@subtitle (Draft version), Version @value{CRAN_POLICY_REVISION} (@value{CRAN_POLICY_DATE})
 @author CRAN Repository Maintainers
 @end titlepage
 
 @ifnottex
-@center (Draft version), Version $Revision: 2663 $ ($Date: 2012-03-20 14:11:41 -0500 (Tue, 20 Mar 2012) $)
+@center (Draft version), Version @value{CRAN_POLICY_REVISION}  (@value{CRAN_POLICY_DATE})
 
 @center @b{CRAN Repository Maintainers}
 
