@@ -27,12 +27,13 @@
 
 This document describes the policies in place for the
 @url{http://www.R-project.org/, R} package repository hosted by the
-@url{http://CRAN.R-project.org/, Comprehensive R Archive Network}.
-In what follows, this CRAN package repository will be referred to as
-``CRAN''.
+@url{http://CRAN.R-project.org/, Comprehensive R Archive Network}.  In
+what follows, this @url{http://CRAN.R-project.org/web/packages/, CRAN
+package repository} will be referred to as ``CRAN''.
 
 CRAN is maintained by the efforts of volunteers (the ``CRAN team'') and
-the resources of the R Foundation and the employers of those volunteers
+the resources of the @url{http://www.R-project.org/foundation/main.html,
+R Foundation} and the employers of those volunteers
 (WU Wien, TU Dortmund, U Oxford, AT&T Research).  Having a package
 distributed by CRAN is subject to a set of policies, and submitting a
 package (including an update) to CRAN indicates agreement to these
@@ -120,6 +121,10 @@ exceptional circumstances updated by the CRAN team) unless the
 maintainer has set a firm deadline for an upcoming update (and keeps to
 it).
 
+Maintainers will be asked to update packages which show any warnings or
+significant notes, especially at around the time of a new @math{x.y.0}
+release.  Packages which are not updated are liable to be archived.
+
 @item
 Packages should be of the minimum necessary size.  Reasonable
 compression should be used for data (not just @file{.rda} files) and PDF
@@ -158,8 +163,9 @@ rounds), ``no more than every 1--2 months'' seems appropriate.
 Authors can avoid a lot of the all too frequent rounds of updates by
 checking carefully for themselves.  It should be normal for those
 without Windows machines of their own to use the winbuilder service to
-check a package before submission.  There is a lot of helpful advice
-on writing portable packages in ``Writing R Extensions''.
+check a package before submission.  There is a lot of helpful advice on
+writing portable packages in @url{../../doc/manuals/R-exts.html,
+``Writing R Extensions''}.
 
 @item
 The code and examples provided in a package should never do anything
@@ -222,7 +228,7 @@ machine: here ``easily'' includes not depending on specific versions,
 nor should the installed binary depend on specific versions.
 
 @item
-it passes R CMD check without error for all the available
+it passes @command{R CMD check} without error for all the available
 sub-architectures, or at CRAN's discretion, for the most important
 sub-architecture(s).
 
