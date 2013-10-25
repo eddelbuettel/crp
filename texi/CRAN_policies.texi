@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2013-03-01 05:12:39 -0600 (Fri, 01 Mar 2013) $
-@set CRAN_POLICY_REVISION $Revision: 2821 $
+@set CRAN_POLICY_DATE $Date: 2013-03-20 14:08:09 -0500 (Wed, 20 Mar 2013) $
+@set CRAN_POLICY_REVISION $Revision: 2833 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -280,9 +280,20 @@ mirrors).
 @node Submission,  , Binary packages, Top
 @unnumbered Submission
 
-When submitting a package to CRAN you should upload by anonymous
-@command{ftp} to @uref{ftp://CRAN.R-project.org/@/incoming/} and send an
-(plain text) email at the same time.  In more detail:
+When submitting a package to CRAN you should either
+@itemize
+
+@item
+use the submission form at @uref{http://cran.r-project.org/submit.html}, or
+
+@item
+upload by anonymous @command{ftp} to
+@uref{ftp://CRAN.R-project.org/@/incoming/} and send a (plain text ASCII)
+email at the same time, with subject line as specified below.
+
+@end itemize
+
+In more detail:
 
 @itemize
 
@@ -294,7 +305,7 @@ follow the @file{@var{PACKAGE}_@var{VERSION}.tar.gz} naming scheme.
 Please ensure that @command{R CMD check --as-cran} has been run @emph{on
 the tarball to be uploaded} before submission.  This should be done with
 the current release of R or (preferably) R-devel or R-patched. As
-``Writing R Extensions'' says
+``Writing R Extensions'' used to say
 
 @quotation
 Please ensure that you can run through the complete procedure with only
@@ -314,7 +325,7 @@ dependencies of the current version can be found on the CRAN web page
 for the package.
 
 @item
-A submission should be accompanied by an email to
+A submission upload  should be accompanied by an email to
 @email{CRAN@@R-project.org} sent from the maintainer
 address listed in the package, and  using the subject line 
 `CRAN submission @var{PACKAGE} @var{VERSION}', where @var{PACKAGE} and
