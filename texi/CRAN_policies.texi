@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2013-02-01 08:35:22 -0600 (Fri, 01 Feb 2013) $
-@set CRAN_POLICY_REVISION $Revision: 2792 $
+@set CRAN_POLICY_DATE $Date: 2013-03-01 05:12:39 -0600 (Fri, 01 Mar 2013) $
+@set CRAN_POLICY_REVISION $Revision: 2821 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -108,6 +108,11 @@ something which can easily be converted back to source (e.g.,
 @file{.rda} files) for all components of the package (including for
 example PDF documentation and configure files produced by
 @command{autoconf}).
+
+Such packages are not permitted to require (e.g., by specifying in
+@samp{Depends}, @samp{Imports} or @samp{LinkingTo} fields) directly or
+indirectly a package or external software which restricts users or
+usage.
 
 The package's license must give the right for CRAN to distribute the
 package in perpetuity.  Any change to a package's license must be
