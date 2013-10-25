@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-09-07 06:09:28 -0500 (Fri, 07 Sep 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2732 $
+@set CRAN_POLICY_DATE $Date: 2012-09-09 02:33:41 -0500 (Sun, 09 Sep 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2733 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -229,7 +229,7 @@ into which they are loaded.
 @item
 @acronym{CRAN} packages should use only the public API.  Hence they should
 not use entry points not declared as API in installed headers nor
-@code{.Internal()l} nor @code{.Call()} etc calls to base packages.  Such
+@code{.Internal()} nor @code{.Call()} etc calls to base packages.  Such
 usages can cause packages to break at any time, even in patched versions
 of R.
 
