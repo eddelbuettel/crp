@@ -1,6 +1,6 @@
 \input texinfo
 @c %**start of header
-@setfilename CRAN_policy.info
+@setfilename CRAN_policies.info
 @settitle CRAN Repository Policy
 @documentlanguage en
 
