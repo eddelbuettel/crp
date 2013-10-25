@@ -70,11 +70,10 @@ contact address must be kept up to date, and be usable for information
 mailed by the CRAN team without any form of filtering, confirmation
 @dots{}
 
-The maintainer warrants that he is acting on behalf of all credited
+The maintainer warrants that (s)he is acting on behalf of all credited
 authors and has their agreement to use their material in the way it is
-included in the package (or if this is not possible, warrants that it
-is used in accordance with the license granted by the original
-author).
+included in the package (or if this is not possible, warrants that it is
+used in accordance with the license granted by the original author).
 
 @item
 Source packages may not contain any form of binary executable code.
