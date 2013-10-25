@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2013-09-10 02:28:32 -0500 (Tue, 10 Sep 2013) $
-@set CRAN_POLICY_REVISION $Revision: 2912 $
+@set CRAN_POLICY_DATE $Date: 2013-09-16 07:15:45 -0500 (Mon, 16 Sep 2013) $
+@set CRAN_POLICY_REVISION $Revision: 2913 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -243,8 +243,15 @@ should not use entry points not declared as API in installed headers nor
 in base packages.  Such usages can cause packages to break at any time,
 even in patched versions of R.
 
-
 @end itemize
+
+@item
+Changes to @acronym{CRAN} packages causing significant disruption to
+other packages must be agreed with the @acronym{CRAN} maintainers well
+in advance of any publicity.  Introduction of new packages providing
+back-compatibility versions of already available packages is not
+allowed.
+
 @end itemize
 
 @node Binary packages, Submission, Source packages, Top
