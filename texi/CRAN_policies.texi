@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-12-17 00:26:14 -0600 (Mon, 17 Dec 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2771 $
+@set CRAN_POLICY_DATE $Date: 2013-02-01 08:35:22 -0600 (Fri, 01 Feb 2013) $
+@set CRAN_POLICY_REVISION $Revision: 2792 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -83,7 +83,7 @@ necessary referring to an @file{inst/COPYRIGHTS} file).
 Trademarks must be respected.
 
 @item
-The package's @file{DESCRIPTION} file must show the name and email
+The package's @file{DESCRIPTION} file must show both the name and email
 address of a single designated maintainer (not a mailing list).  That
 contact address must be kept up to date, and be usable for information
 mailed by the CRAN team without any form of filtering, confirmation
@@ -318,11 +318,16 @@ text ASCII emails should be used if at all possible.
 
 If for some reason the submission has to be made by someone else (for
 example, a co-author) this needs to be explained, and the designated
-maintainer will need to confirm the submission.
+maintainer will need to confirm the submission.  Explain any change in
+the maintainer's email address.
 
 For a new submission, confirm in your email that you have read and agree
 to these policies.  (This includes new versions of previously archived
 packages, and the first submission as the new maintainer for a package.)
+
+If the package needs special treatment (for example if vignettes can
+only be run or re-built on the maintainer's machine or take a very long
+time), say so in the submission email.
 
 Do not email the package itself.
 
