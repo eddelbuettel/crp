@@ -155,17 +155,6 @@ If running a package uses multiple threads/cores it must never use more
 than two simultaneously: the check farm is a shared resource and will
 typically be running many checks simultaneously.
 
-@item
-Submitting updates should be done responsibly and with respect for the
-volunteers' time.  Once a package is established (which may take several
-rounds), ``no more than every 1--2 months'' seems appropriate.
-
-Authors can avoid a lot of the all too frequent rounds of updates by
-checking carefully for themselves.  It should be normal for those
-without Windows machines of their own to use the winbuilder service to
-check a package before submission.  There is a lot of helpful advice on
-writing portable packages in @url{../../doc/manuals/R-exts.html,
-``Writing R Extensions''}.
 
 @item
 The code and examples provided in a package should never do anything
@@ -249,9 +238,35 @@ Uploads must be source tarballs as created by @command{R CMD build} and
 follow the @file{@var{PACKAGE}_@var{VERSION}.tar.gz} naming scheme.
 
 @item
+Please ensure that @command{R CMD check} has been run @emph{on the
+tarball to be uploaded} before submission.  This should be done with the
+current release of R or (preferably) R-devel or R-patched. As `Writing R
+Extensions' says
+
+@quotation
+Please ensure that you can run through the complete procedure with only
+warnings that you understand and have reasons not to eliminate.  In
+principle, packages must pass @code{R CMD check} without warnings to be
+admitted to the main @acronym{CRAN} package area.  If there are warnings
+you cannot eliminate (for example because you believe them to be
+spurious) send an explanatory note as part of your covering email.
+@end quotation
+
+@item
+For a package update, please check that any packages depending on this
+one still pass @code{R CMD check}: it is particularly important that you
+check your own packages.  A listing of the reverse dependencies of the
+current version can be found on the CRAN web page for the package.
+
+@item
 A submission should be accompanied by an email to
 @email{CRAN@@R-project.org}, if possible sent from the maintainer
-address listed in the package.
+address listed in the package, and giving the package name and version
+on the subject line.
+
+If for some reason the submission has to be made by someone else (for
+example, a co-author) this needs to be explained, and the designated
+maintainer will need to confirm the submission.
 
 @item
 Once uploaded, no further submissions of that package should be made
@@ -259,10 +274,31 @@ whilst the uploaded version is pending processing (which may take a
 few days).
 
 @item
-Part of the processing is that unsuccessful uploads are renamed to
-@file{@var{PACKAGE}_@var{VERSION}.tar.gz.save}: the presence of such a
-file is a sign that a submission is still pending (and such a name
-should never be uploaded).
+Part of the processing is that uploads may be renamed to
+@file{@var{PACKAGE}_@var{VERSION}.tar.gz.save} or
+@file{@var{PACKAGE}_@var{VERSION}.tar.gz.pending}: the presence of such
+a file is a sign that a submission is still pending (and such a file
+name should never be uploaded).
+
+@item
+Submitting updates should be done responsibly and with respect for the
+volunteers' time.  Once a package is established (which may take several
+rounds), ``no more than every 1--2 months'' seems appropriate.
+
+Authors can avoid a lot of the all too frequent rounds of updates by
+checking carefully for themselves.  It should be normal for those
+without Windows machines of their own to use the winbuilder service to
+check a package before submission.  There is a lot of helpful advice on
+writing portable packages in @url{../../doc/manuals/R-exts.html,
+``Writing R Extensions''}.
+
+@item
+If an update will change the package's API and hence affect packages
+depending on it, it is expected that you will contact the maintainers of
+affected packages and suggest changes, and give them time to prepare
+updates before submitting your updated package.  Do also mention which
+packages are affected and that they have been informed in the submission
+email.
 
 @end itemize
 
