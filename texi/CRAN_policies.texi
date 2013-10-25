@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2012-09-03 03:15:14 -0500 (Mon, 03 Sep 2012) $
-@set CRAN_POLICY_REVISION $Revision: 2730 $
+@set CRAN_POLICY_DATE $Date: 2012-09-07 06:09:28 -0500 (Fri, 07 Sep 2012) $
+@set CRAN_POLICY_REVISION $Revision: 2732 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -225,6 +225,14 @@ the user.
 @item
 Packages must not disable the stack-checking mechanism in the R process
 into which they are loaded.
+
+@item
+@acronym{CRAN} packages should use only the public API.  Hence they should
+not use entry points not declared as API in installed headers nor
+@code{.Internal()l} nor @code{.Call()} etc calls to base packages.  Such
+usages can cause packages to break at any time, even in patched versions
+of R.
+
 
 @end itemize
 @end itemize
