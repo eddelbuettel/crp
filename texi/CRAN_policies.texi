@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2013-10-23 10:15:25 -0500 (Wed, 23 Oct 2013) $
-@set CRAN_POLICY_REVISION $Revision: 2935 $
+@set CRAN_POLICY_DATE $Date: 2014-03-17 06:22:29 -0500 (Mon, 17 Mar 2014) $
+@set CRAN_POLICY_REVISION $Revision: 3016 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -129,7 +129,8 @@ appropriate place to host them.
 
 @item
 Packages should be named in a way that does not conflict (irrespective
-of case) with any current or past CRAN package (the Archive area can be
+of case) with any current or past CRAN package (the
+@url{http://CRAN.R-project.org/src/contrib/Archive/, Archive area} can be
 consulted), nor any current @url{http://www.bioconductor.org/,
 Bioconductor} package.  Package maintainers give the right to use that
 package name to CRAN when they submit, so the CRAN team may orphan a
@@ -138,6 +139,13 @@ package and allow another maintainer to take it over.
 When a new maintainer wishes to take over a package, this should be
 accompanied by the written agreement of the previous maintainer
 (unless the package has been formally orphaned).
+
+@item
+Packages on which a CRAN package depends should be available from a
+mainstream repository: if any mentioned in @code{Suggests} or
+@code{Enhances} fields are not from such a repository, where to obtain
+them should be mentioned in the @code{Description} field of the
+@code{DESCRIPTION} file.
 
 @item
 Packages will not normally be removed from CRAN: however, they may
@@ -306,7 +314,7 @@ email at the same time, with subject line as specified below.
 @end itemize
 
 In either case, you can check that the submission was received by
-looking at @uref{ftp://cran.r-project.org/incoming/}.
+looking at @uref{ftp://CRAN.R-project.org/incoming/}.
 
 In more detail:
 
@@ -386,7 +394,7 @@ writing portable packages in @url{../../doc/manuals/R-exts.html,
 ``Writing R Extensions''}.
 
 Before submitting a package update, consult the CRAN check page at
-@uref{http://cran.r-project.org/web/checks/check_results_NAME.html},
+@uref{http://CRAN.R-project.org/web/checks/check_results_NAME.html},
 substituting NAME by the name of your package.  In particular, wait for
 that page to be fully updated after publication of a version (which can
 take at least 48 hours) before submitting any corrections.
@@ -400,7 +408,7 @@ the submission email which packages are affected and that their
 maintainers have been informed.
 In order to derive the reverse dependencies of a package including the 
 addresses of maintainers who have to be notified upon changes, the 
-function @url{http://developer.r-project.org/CRAN/Scripts/depends.R, 
+function @url{http://developer.R-project.org/CRAN/Scripts/depends.R, 
 reverse_dependencies_with_maintainers} is available from the developer 
 website. 
 
