@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>CRAN Repository Policy</title>
+
+<meta name="description" content="CRAN Repository Policy">
+<meta name="keywords" content="CRAN Repository Policy">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="#Top" rel="start" title="Top">
+<link href="dir.html#Top" rel="up" title="(dir)">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+body {margin-left: 5%; margin-right: 5%;}
+
+H1 {             
+    background: white;
+    color: rgb(25%, 25%, 25%);
+    font-family: monospace;
+    font-size: xx-large;
+    text-align: center
+}
+
+H2 {
+    background: white;
+    color: rgb(40%, 40%, 40%);
+    font-family: monospace;
+    font-size: x-large;
+}
+
+ul {
+    margin-top: 0.25ex;
+    margin-bottom: 0.25ex;
+    padding-left: 1em;
+}
+li {
+    margin-top: 0.6ex;
+    margin-bottom: 0.25ex;
+}
+p {
+    margin-top: 0.6ex;
+    margin-bottom: 1.2ex;
+}
+
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<h1 class="settitle" align="center">CRAN Repository Policy</h1>
+
+
+
+<div align="center">Version $Revision: 3016 $
+</div>
+<div align="center"><b>CRAN Repository Maintainers</b>
+</div>
+<a name="Top"></a>
+<h1 class="node-heading">Top</h1>
+
+
+
+<hr>
+<a name="Preamble"></a>
+<a name="Preamble-1"></a>
+<h2 class="unnumbered">Preamble</h2>
+
+<p>This document describes the policies in place for the
+<a href="http://www.R-project.org/">R</a> package repository hosted by the
+<a href="http://CRAN.R-project.org/">Comprehensive R Archive Network</a>.  In
+what follows, this <a href="http://CRAN.R-project.org/web/packages/">CRAN
+package repository</a> will be referred to as &ldquo;CRAN&rdquo;.
+</p>
+<p>CRAN is maintained by the efforts of volunteers (the &ldquo;CRAN team&rdquo;) and
+the resources of the <a href="http://www.R-project.org/foundation/main.html">R Foundation</a> and the employers of those volunteers
+(WU Wien, TU Dortmund, U Oxford, AT&amp;T Research).  Having a package
+distributed by CRAN is subject to a set of policies, and submitting a
+package (including an update) to CRAN indicates agreement to these
+policies.
+</p>
+<p>Distributing code or documentation is subject to legal requirements,
+and CRAN operates in many jurisdictions.  One of the aims of these
+policies is to ensure that the distributors meet their legal
+obligations of diligence without excessive work.
+</p>
+<p>The time of the volunteers is CRAN&rsquo;s most precious resource, and they
+reserve the right to remove or modify packages on CRAN without notice
+or explanation (although notification will usually be given).
+</p>
+<hr>
+<a name="Source-packages"></a>
+<a name="Source-packages-1"></a>
+<h2 class="unnumbered">Source packages</h2>
+
+<ul>
+<li> The ownership of copyright and intellectual property rights of all
+components of the package must be clear and unambiguous (including from
+the authors specification in the <samp>DESCRIPTION</samp> file).  Where code
+is copied (or derived) from the work of others (including from R
+itself), care must be taken that any copyright/license statements are
+preserved and authorship is not misrepresented.
+
+<p>Where copyrights are held by an entity other than the authors, the
+<code>Authors@R</code> field can be used, or a <code>Copyright</code> field (if
+necessary referring to an <samp>inst/COPYRIGHTS</samp> file).
+</p>
+<p>Trademarks must be respected.
+</p>
+</li><li> The package&rsquo;s <samp>DESCRIPTION</samp> file must show both the name and email
+address of a single designated maintainer (not a mailing list).  That
+contact address must be kept up to date, and be usable for information
+mailed by the CRAN team without any form of filtering, confirmation
+&hellip;
+
+<p>The maintainer warrants that (s)he is acting on behalf of all credited
+authors and has their agreement to use their material in the way it is
+included in the package (or if this is not possible, warrants that it is
+used in accordance with the license granted by the original author).
+</p>
+<p>Additional <samp>DESCRIPTION</samp> fields could be used for providing email
+addresses for contacting the package authors/developers (e.g.,
+&lsquo;<samp>Contact</samp>&rsquo;), or a URL for submitting bug reports (e.g.,
+&lsquo;<samp>BugReports</samp>&rsquo;).
+</p>
+</li><li> Source packages may not contain any form of binary executable code.
+
+</li><li> Source packages under an Open Source license must provide source or
+something which can easily be converted back to source (e.g.,
+<samp>.rda</samp> files) for all components of the package (including for
+example PDF documentation and configure files produced by
+<code>autoconf</code>).
+
+<p>Such packages are not permitted to require (e.g., by specifying in
+&lsquo;<samp>Depends</samp>&rsquo;, &lsquo;<samp>Imports</samp>&rsquo; or &lsquo;<samp>LinkingTo</samp>&rsquo; fields) directly or
+indirectly a package or external software which restricts users or
+usage.
+</p>
+<p>The package&rsquo;s license must give the right for CRAN to distribute the
+package in perpetuity.  Any change to a package&rsquo;s license must be
+highlighted when an update is submitted (for there have been instances
+of an undocumented license change removing even the right of CRAN to
+distribute the package).
+</p>
+</li><li> Package authors should make all reasonable efforts to provide
+cross-platform portable code.  Packages will not normally be accepted
+that do not run on at least two of the major R platforms.  Cases for
+Windows-only packages will be considered, but CRAN may not be the most
+appropriate place to host them.
+
+</li><li> Packages should be named in a way that does not conflict (irrespective
+of case) with any current or past CRAN package (the
+<a href="http://CRAN.R-project.org/src/contrib/Archive/">Archive area</a> can be
+consulted), nor any current <a href="http://www.bioconductor.org/">Bioconductor</a> package.  Package maintainers give the right to use that
+package name to CRAN when they submit, so the CRAN team may orphan a
+package and allow another maintainer to take it over.
+
+<p>When a new maintainer wishes to take over a package, this should be
+accompanied by the written agreement of the previous maintainer
+(unless the package has been formally orphaned).
+</p>
+</li><li> Packages on which a CRAN package depends should be available from a
+mainstream repository: if any mentioned in <code>Suggests</code> or
+<code>Enhances</code> fields are not from such a repository, where to obtain
+them should be mentioned in the <code>Description</code> field of the
+<code>DESCRIPTION</code> file.
+
+</li><li> Packages will not normally be removed from CRAN: however, they may
+be archived, including at the maintainer&rsquo;s request.
+
+<p>Packages for which <code>R CMD check</code> gives an &lsquo;<samp>ERROR</samp>&rsquo; when a
+new R <em>x.y.0</em> version is released will be archived (or in
+exceptional circumstances updated by the CRAN team) unless the
+maintainer has set a firm deadline for an upcoming update (and keeps to
+it).
+</p>
+<p>Maintainers will be asked to update packages which show any warnings or
+significant notes, especially at around the time of a new <em>x.y.0</em>
+release.  Packages which are not updated are liable to be archived.
+</p>
+</li><li> Packages should be of the minimum necessary size.  Reasonable
+compression should be used for data (not just <samp>.rda</samp> files) and PDF
+documentation: CRAN will if necessary pass the latter through
+<code>qpdf</code>.
+
+<p>As a general rule, neither data nor documentation should exceed 5MB
+(which covers several books).  A CRAN package is not an appropriate
+way to distribute course notes, and authors will be asked to trim
+their documentation to a maximum of 5MB.
+</p>
+<p>Where a large amount of data is required (even after compression),
+consideration should be given to a separate data-only package which
+can be updated only rarely (since older versions of packages are
+archived in perpetuity).
+</p>
+<p>Similar considerations apply to other forms of &ldquo;data&rdquo;, e.g.,
+<code>jar</code> files.
+</p>
+</li><li> Checking the package should take as little CPU time as possible, as the
+CRAN check farm is a very limited resource and there are thousands of
+packages.  Long-running tests and vignette code can be made optional for
+checking, but do ensure that the checks that are left do exercise all
+the features of the package.
+
+<p>If running a package uses multiple threads/cores it must never use more
+than two simultaneously: the check farm is a shared resource and will
+typically be running many checks simultaneously.
+</p>
+<p>Examples should run for no more than a few seconds each: they are
+intended to exemplify to the would-be user how to use the functions in
+the package.
+</p>
+
+</li><li> The code and examples provided in a package should never do anything
+which might be regarded as malicious or anti-social.  The following are
+illustrative examples from past experience.
+
+<ul class="no-bullet">
+<li>- Compiled code should never terminate the R process within which it is
+running.  Thus C/C++ calls to <code>assert</code>/<code>abort</code>/<code>exit</code>,
+Fortran calls to <code>STOP</code> and so on must be avoided.  Nor may R code
+call <code>q()</code>.
+
+</li><li>- A package must not tamper with the code already loaded into R: any
+attempt to change code in the standard and recommended packages which
+ship with R is prohibited.  Altering the namespace of another package
+should only be done with the agreement of the maintainer of that
+package.
+
+</li><li>- Packages should not write in the users&rsquo; home filespace, nor anywhere
+else on the file system apart from the R session&rsquo;s temporary directory
+(or during installation in the location pointed to by <code>TMPDIR</code>: and
+such usage should be cleaned up).  Installing into the system&rsquo;s R
+installation (e.g., scripts to its <samp>bin</samp> directory) is not allowed.
+
+<p>Limited exceptions may be allowed in interactive sessions if the
+package obtains confirmation from the user.
+</p>
+</li><li>- Packages should not modify the global environment (user&rsquo;s workspace).
+
+</li><li>- Packages should not start external software (such as PDF viewers or
+browsers) during examples or tests unless that specific instance of
+the software is explicitly closed afterwards.
+
+</li><li>- Packages should not send information about the R session to the
+maintainer&rsquo;s or third-party sites without obtaining confirmation from
+the user.
+
+</li><li>- Packages must not disable the stack-checking mechanism in the R process
+into which they are loaded.
+
+</li><li>- <acronym>CRAN</acronym> packages should use only the public API.  Hence they
+should not use entry points not declared as API in installed headers nor
+<code>.Internal()</code> nor <code>.Call()</code> etc calls to base packages. Also,
+<code>:::</code> should not be used to access undocumented/internal functions
+in base packages.  Such usages can cause packages to break at any time,
+even in patched versions of R.
+
+</li></ul>
+
+</li><li> Changes to <acronym>CRAN</acronym> packages causing significant disruption to
+other packages must be agreed with the <acronym>CRAN</acronym> maintainers well
+in advance of any publicity.  Introduction of new packages providing
+back-compatibility versions of already available packages is not
+allowed.
+
+</li></ul>
+
+<hr>
+<a name="Binary-packages"></a>
+<a name="Binary-packages-1"></a>
+<h2 class="unnumbered">Binary packages</h2>
+
+<p>Policies for when a (Windows or OS X) binary package will be distributed:
+</p>
+<ul>
+<li> all its package dependencies on CRAN are available for that platform.
+Dependencies from other repositories will be installed at CRAN&rsquo;s
+discretion.
+
+</li><li> any external software needed can easily be installed on the build
+machine for all the sub-architectures: here &ldquo;easily&rdquo; includes not
+depending on specific versions, nor should the installed binary depend
+on specific versions.
+
+</li><li> it passes <code>R CMD check</code> without error for all the available
+sub-architectures, or at CRAN&rsquo;s discretion, for the most important
+sub-architecture(s).
+
+</li></ul>
+
+<p>Binary packages are not accepted from maintainers: CRAN will only host
+binary packages prepared by those responsible for the binary areas.
+Their packages are made automatically by batch jobs and can take a day
+or two to appear on the CRAN master site (maybe longer to reach CRAN
+mirrors).
+</p>
+<hr>
+<a name="Submission"></a>
+<a name="Submission-1"></a>
+<h2 class="unnumbered">Submission</h2>
+
+<p>When submitting a package to CRAN you should <strong>either</strong>
+</p><ul>
+<li> use the submission form at <a href="http://CRAN.R-project.org/submit.html">http://CRAN.R-project.org/submit.html</a>
+(and not send an email).  You will be sent a confirmation email which
+needs to be accepted.
+
+<p><strong>or</strong>
+</p>
+</li><li> upload by anonymous <code>ftp</code> to
+<a href="ftp://CRAN.R-project.org/incoming/">ftp://CRAN.R-project.org/incoming/</a> and send a (plain text ASCII)
+email at the same time, with subject line as specified below.
+
+</li></ul>
+
+<p>In either case, you can check that the submission was received by
+looking at <a href="ftp://CRAN.R-project.org/incoming/">ftp://CRAN.R-project.org/incoming/</a>.
+</p>
+<p>In more detail:
+</p>
+<ul>
+<li> Uploads must be source tarballs created by <code>R CMD build</code> and
+following the <samp><var>PACKAGE</var>_<var>VERSION</var>.tar.gz</samp> naming scheme.
+
+</li><li> Please ensure that <code>R CMD check --as-cran</code> has been run <em>on
+the tarball to be uploaded</em> before submission.  This should be done with
+the current version of R-devel (or if that is not possible, current
+R-patched or the current release of R.) 
+
+<p>In principle, packages must pass <code>R CMD check</code> without warnings or
+significant notes to be admitted to the main <acronym>CRAN</acronym> package
+area.  If there are warnings or notes you cannot eliminate (for example
+because you believe them to be spurious) send an explanatory note as
+part of your covering email, or as a comment on the submission form.
+</p>
+</li><li> For a package update, please check that any packages depending on this
+one still pass <code>R CMD check</code>: it is especially expected that you
+will have checked your own packages.  A listing of the reverse
+dependencies of the current version can be found on the CRAN web page
+for the package.
+
+</li><li> An <code>ftp</code> upload should be accompanied by an email to
+<a href="mailto:CRAN@R-project.org">CRAN@R-project.org</a> sent from the maintainer address listed in
+the package, and using the subject line &lsquo;CRAN submission <var>PACKAGE</var>
+<var>VERSION</var>&rsquo;, where <var>PACKAGE</var> and <var>VERSION</var> are the package
+name and version, respectively.  Plain text ASCII emails should be used
+if at all possible.
+
+<p>If for some reason the submission has to be made by someone else (for
+example, a co-author) this needs to be explained, and the designated
+maintainer will need to confirm the submission.  Explain any change in
+the maintainer&rsquo;s email address and if possible send confirmation from
+the previous address.
+</p>
+<p>For a new submission, confirm in your email that you have read and agree
+to these policies.  (This includes new versions of previously archived
+packages, and the first submission as the new maintainer for a package.)
+</p>
+<p>If the package needs special treatment (for example if vignettes can
+only be run or re-built on the maintainer&rsquo;s machine or take a very long
+time), say so in the submission email or on the submission form.
+</p>
+<p>Do not email the package itself.
+</p>
+</li><li> Once uploaded, no further submissions of that package should be made
+whilst the uploaded version is pending processing (which may take a
+few days) and you have not received a reply from a CRAN maintainer.
+
+</li><li> Part of the processing is that uploads may be renamed by adding one of
+the extensions <samp>.save</samp>, <samp>.pending</samp> or <samp>.noemail</samp>:  the
+presence of such a file is a sign that the submission process is not 
+finished yet and CRAN maintainers are waiting for response or 
+resubmission from the package maintainer (and such a file name should 
+never be uploaded).
+
+</li><li> Submitting updates should be done responsibly and with respect for the
+volunteers&rsquo; time.  Once a package is established (which may take several
+rounds), &ldquo;no more than every 1&ndash;2 months&rdquo; seems appropriate.
+
+<p>Authors can avoid a lot of the all too frequent rounds of updates by
+checking carefully for themselves.  It should be normal for those
+without Windows machines of their own to use the
+<a href="http://win-builder.R-project.org/">winbuilder</a> service to
+check a package before submission.  There is a lot of helpful advice on
+writing portable packages in <a href="../../doc/manuals/R-exts.html">&ldquo;Writing R Extensions&rdquo;</a>.
+</p>
+<p>Before submitting a package update, consult the CRAN check page at
+<a href="http://CRAN.R-project.org/web/checks/check_results_NAME.html">http://CRAN.R-project.org/web/checks/check_results_NAME.html</a>,
+substituting NAME by the name of your package.  In particular, wait for
+that page to be fully updated after publication of a version (which can
+take at least 48 hours) before submitting any corrections.
+</p>
+</li><li> If an update will change the package&rsquo;s API and hence affect packages
+depending on it, it is expected that you will contact the maintainers of
+affected packages and suggest changes, and give them time to prepare
+updates before submitting your updated package.  Do mention in
+the submission email which packages are affected and that their
+maintainers have been informed.
+In order to derive the reverse dependencies of a package including the 
+addresses of maintainers who have to be notified upon changes, the 
+function <a href="http://developer.R-project.org/CRAN/Scripts/depends.R">reverse_dependencies_with_maintainers</a> is available from the developer 
+website. 
+
+
+</li></ul>
+
+<hr>
+
+
+
+</body>
+</html>
