@@ -20,7 +20,7 @@ if (file.exists(prvfile)) {
 file.copy(tmpfile, prvfile)
 
 ## create txt file
-txtfile <- file.path("html", paste0("policies.r", rev, ".txt"))
+txtfile <- file.path("txt", paste0("policies.r", rev, ".txt"))
 cmd <- sprintf("links -dump %s > %s", prvfile, txtfile)
 system(cmd)
 
