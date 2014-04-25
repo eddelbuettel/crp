@@ -25,7 +25,7 @@ cmd <- sprintf("links -dump %s > %s", prvfile, txtfile)
 system(cmd)
 
 ## commit html and txt file
-cmd <- sprintf("gid add %s %s; git commit -m'new rev%d'; git push", prvfile, txtfile, rev)
+cmd <- sprintf("git add %s %s; git commit -m'new rev%d'; git push", prvfile, txtfile, rev)
 system(cmd)
 
   ## 535  links -dump html/policies.r2935.html > txt/policies.r2935.txt
