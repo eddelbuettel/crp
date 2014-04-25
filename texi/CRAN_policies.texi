@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2014-03-17 06:22:29 -0500 (Mon, 17 Mar 2014) $
-@set CRAN_POLICY_REVISION $Revision: 3016 $
+@set CRAN_POLICY_DATE $Date: 2014-04-25 12:02:43 -0500 (Fri, 25 Apr 2014) $
+@set CRAN_POLICY_REVISION $Revision: 3057 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -144,8 +144,9 @@ accompanied by the written agreement of the previous maintainer
 Packages on which a CRAN package depends should be available from a
 mainstream repository: if any mentioned in @code{Suggests} or
 @code{Enhances} fields are not from such a repository, where to obtain
-them should be mentioned in the @code{Description} field of the
-@code{DESCRIPTION} file.
+them should be specified in the @code{Additional_repositories} field of
+the @file{DESCRIPTION} file as a comma-separated list of repository
+URLs.
 
 @item
 Packages will not normally be removed from CRAN: however, they may
@@ -390,7 +391,7 @@ checking carefully for themselves.  It should be normal for those
 without Windows machines of their own to use the
 @url{http://win-builder.R-project.org/, winbuilder} service to
 check a package before submission.  There is a lot of helpful advice on
-writing portable packages in @url{../../doc/manuals/R-exts.html,
+writing portable packages in @url{../../manuals.html#R-exts,
 ``Writing R Extensions''}.
 
 Before submitting a package update, consult the CRAN check page at
