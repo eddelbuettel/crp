@@ -80,7 +80,7 @@ p {
 
 
 
-<div align="center">Version $Revision: 3057 $
+<div align="center">Version $Revision: 3099 $
 </div>
 <div align="center"><b>CRAN Repository Maintainers</b>
 </div>
@@ -170,6 +170,10 @@ highlighted when an update is submitted (for there have been instances
 of an undocumented license change removing even the right of CRAN to
 distribute the package).
 </p>
+<p>Packages with licenses not listed at
+<a href="https://svn.r-project.org/R/trunk/share/licenses/license.db">https://svn.r-project.org/R/trunk/share/licenses/license.db</a> will
+generally not be accepted.
+</p>
 </li><li> Package authors should make all reasonable efforts to provide
 cross-platform portable code.  Packages will not normally be accepted
 that do not run on at least two of the major R platforms.  Cases for
@@ -190,9 +194,10 @@ accompanied by the written agreement of the previous maintainer
 </li><li> Packages on which a CRAN package depends should be available from a
 mainstream repository: if any mentioned in <code>Suggests</code> or
 <code>Enhances</code> fields are not from such a repository, where to obtain
-them should be specified in the <code>Additional_repositories</code> field of
-the <samp>DESCRIPTION</samp> file as a comma-separated list of repository
-URLs.
+them at a repository should be specified in an
+<code>Additional_repositories</code> field of the <samp>DESCRIPTION</samp> file (as
+a comma-separated list of repository URLs) or for other means of access,
+described in the <code>Description</code> field.
 
 </li><li> Packages will not normally be removed from CRAN: however, they may
 be archived, including at the maintainer&rsquo;s request.

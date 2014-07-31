@@ -3,7 +3,7 @@
 
                              CRAN Repository Policy
 
-                           Version $Revision: 3057 $
+                           Version $Revision: 3099 $
                           CRAN Repository Maintainers
 
                                       Top
@@ -80,6 +80,10 @@ Source packages
        of an undocumented license change removing even the right of CRAN to
        distribute the package).
 
+       Packages with licenses not listed at
+       https://svn.r-project.org/R/trunk/share/licenses/license.db will
+       generally not be accepted.
+
      * Package authors should make all reasonable efforts to provide
        cross-platform portable code. Packages will not normally be accepted
        that do not run on at least two of the major R platforms. Cases for
@@ -98,9 +102,10 @@ Source packages
 
      * Packages on which a CRAN package depends should be available from a
        mainstream repository: if any mentioned in Suggests or Enhances fields
-       are not from such a repository, where to obtain them should be
-       specified in the Additional_repositories field of the DESCRIPTION file
-       as a comma-separated list of repository URLs.
+       are not from such a repository, where to obtain them at a repository
+       should be specified in an Additional_repositories field of the
+       DESCRIPTION file (as a comma-separated list of repository URLs) or for
+       other means of access, described in the Description field.
      * Packages will not normally be removed from CRAN: however, they may be
        archived, including at the maintainer's request.
 
