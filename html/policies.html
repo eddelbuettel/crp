@@ -80,7 +80,7 @@ p {
 
 
 
-<div align="center">Version $Revision: 2935 $
+<div align="center">Version $Revision: 3016 $
 </div>
 <div align="center"><b>CRAN Repository Maintainers</b>
 </div>
@@ -177,7 +177,8 @@ Windows-only packages will be considered, but CRAN may not be the most
 appropriate place to host them.
 
 </li><li> Packages should be named in a way that does not conflict (irrespective
-of case) with any current or past CRAN package (the Archive area can be
+of case) with any current or past CRAN package (the
+<a href="http://CRAN.R-project.org/src/contrib/Archive/">Archive area</a> can be
 consulted), nor any current <a href="http://www.bioconductor.org/">Bioconductor</a> package.  Package maintainers give the right to use that
 package name to CRAN when they submit, so the CRAN team may orphan a
 package and allow another maintainer to take it over.
@@ -186,6 +187,12 @@ package and allow another maintainer to take it over.
 accompanied by the written agreement of the previous maintainer
 (unless the package has been formally orphaned).
 </p>
+</li><li> Packages on which a CRAN package depends should be available from a
+mainstream repository: if any mentioned in <code>Suggests</code> or
+<code>Enhances</code> fields are not from such a repository, where to obtain
+them should be mentioned in the <code>Description</code> field of the
+<code>DESCRIPTION</code> file.
+
 </li><li> Packages will not normally be removed from CRAN: however, they may
 be archived, including at the maintainer&rsquo;s request.
 
@@ -336,7 +343,7 @@ email at the same time, with subject line as specified below.
 </li></ul>
 
 <p>In either case, you can check that the submission was received by
-looking at <a href="ftp://cran.r-project.org/incoming/">ftp://cran.r-project.org/incoming/</a>.
+looking at <a href="ftp://CRAN.R-project.org/incoming/">ftp://CRAN.R-project.org/incoming/</a>.
 </p>
 <p>In more detail:
 </p>
@@ -407,7 +414,7 @@ check a package before submission.  There is a lot of helpful advice on
 writing portable packages in <a href="../../doc/manuals/R-exts.html">&ldquo;Writing R Extensions&rdquo;</a>.
 </p>
 <p>Before submitting a package update, consult the CRAN check page at
-<a href="http://cran.r-project.org/web/checks/check_results_NAME.html">http://cran.r-project.org/web/checks/check_results_NAME.html</a>,
+<a href="http://CRAN.R-project.org/web/checks/check_results_NAME.html">http://CRAN.R-project.org/web/checks/check_results_NAME.html</a>,
 substituting NAME by the name of your package.  In particular, wait for
 that page to be fully updated after publication of a version (which can
 take at least 48 hours) before submitting any corrections.
@@ -420,7 +427,7 @@ the submission email which packages are affected and that their
 maintainers have been informed.
 In order to derive the reverse dependencies of a package including the 
 addresses of maintainers who have to be notified upon changes, the 
-function <a href="http://developer.r-project.org/CRAN/Scripts/depends.R">reverse_dependencies_with_maintainers</a> is available from the developer 
+function <a href="http://developer.R-project.org/CRAN/Scripts/depends.R">reverse_dependencies_with_maintainers</a> is available from the developer 
 website. 
 
 
