@@ -80,7 +80,7 @@ p {
 
 
 
-<div align="center">Version $Revision: 3099 $
+<div align="center">Version $Revision: 3128 $
 </div>
 <div align="center"><b>CRAN Repository Maintainers</b>
 </div>
@@ -156,8 +156,10 @@ addresses for contacting the package authors/developers (e.g.,
 </li><li> Source packages under an Open Source license must provide source or
 something which can easily be converted back to source (e.g.,
 <samp>.rda</samp> files) for all components of the package (including for
-example PDF documentation and configure files produced by
-<code>autoconf</code>).
+example PDF documentation, configure files produced by
+<code>autoconf</code>). For Java <samp>.class</samp> and <samp>.jar</samp> files, the
+sources should be in a top-level <samp>java</samp> directory in the source
+package (or that directory should explain how they can be obtained).
 
 <p>Such packages are not permitted to require (e.g., by specifying in
 &lsquo;<samp>Depends</samp>&rsquo;, &lsquo;<samp>Imports</samp>&rsquo; or &lsquo;<samp>LinkingTo</samp>&rsquo; fields) directly or

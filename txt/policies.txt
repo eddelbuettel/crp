@@ -3,7 +3,7 @@
 
                              CRAN Repository Policy
 
-                           Version $Revision: 3099 $
+                           Version $Revision: 3128 $
                           CRAN Repository Maintainers
 
                                       Top
@@ -68,7 +68,10 @@ Source packages
      * Source packages under an Open Source license must provide source or
        something which can easily be converted back to source (e.g., .rda
        files) for all components of the package (including for example PDF
-       documentation and configure files produced by autoconf).
+       documentation, configure files produced by autoconf). For Java .class
+       and .jar files, the sources should be in a top-level java directory in
+       the source package (or that directory should explain how they can be
+       obtained).
 
        Such packages are not permitted to require (e.g., by specifying in
        `Depends', `Imports' or `LinkingTo' fields) directly or indirectly a
