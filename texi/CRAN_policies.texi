@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2014-04-25 12:02:43 -0500 (Fri, 25 Apr 2014) $
-@set CRAN_POLICY_REVISION $Revision: 3057 $
+@set CRAN_POLICY_DATE $Date: 2014-07-30 07:52:51 -0500 (Wed, 30 Jul 2014) $
+@set CRAN_POLICY_REVISION $Revision: 3128 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -106,8 +106,10 @@ Source packages may not contain any form of binary executable code.
 Source packages under an Open Source license must provide source or
 something which can easily be converted back to source (e.g.,
 @file{.rda} files) for all components of the package (including for
-example PDF documentation and configure files produced by
-@command{autoconf}).
+example PDF documentation, configure files produced by
+@command{autoconf}). For Java @file{.class} and @file{.jar} files, the
+sources should be in a top-level @file{java} directory in the source
+package (or that directory should explain how they can be obtained).
 
 Such packages are not permitted to require (e.g., by specifying in
 @samp{Depends}, @samp{Imports} or @samp{LinkingTo} fields) directly or
@@ -119,6 +121,10 @@ package in perpetuity.  Any change to a package's license must be
 highlighted when an update is submitted (for there have been instances
 of an undocumented license change removing even the right of CRAN to
 distribute the package).
+
+Packages with licenses not listed at
+@url{https://svn.r-project.org/R/trunk/share/licenses/license.db} will
+generally not be accepted.
 
 @item
 Package authors should make all reasonable efforts to provide
@@ -144,9 +150,10 @@ accompanied by the written agreement of the previous maintainer
 Packages on which a CRAN package depends should be available from a
 mainstream repository: if any mentioned in @code{Suggests} or
 @code{Enhances} fields are not from such a repository, where to obtain
-them should be specified in the @code{Additional_repositories} field of
-the @file{DESCRIPTION} file as a comma-separated list of repository
-URLs.
+them at a repository should be specified in an
+@code{Additional_repositories} field of the @file{DESCRIPTION} file (as
+a comma-separated list of repository URLs) or for other means of access,
+described in the @code{Description} field.
 
 @item
 Packages will not normally be removed from CRAN: however, they may
