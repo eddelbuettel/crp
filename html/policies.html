@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<!-- Created by GNU Texinfo 5.1, http://www.gnu.org/software/texinfo/ -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
 <head>
 <title>CRAN Repository Policy</title>
 
@@ -80,7 +80,7 @@ p {
 
 
 
-<div align="center">Version $Revision: 2913 $
+<div align="center">Version $Revision: 2935 $
 </div>
 <div align="center"><b>CRAN Repository Maintainers</b>
 </div>
@@ -405,6 +405,12 @@ without Windows machines of their own to use the
 <a href="http://win-builder.R-project.org/">winbuilder</a> service to
 check a package before submission.  There is a lot of helpful advice on
 writing portable packages in <a href="../../doc/manuals/R-exts.html">&ldquo;Writing R Extensions&rdquo;</a>.
+</p>
+<p>Before submitting a package update, consult the CRAN check page at
+<a href="http://cran.r-project.org/web/checks/check_results_NAME.html">http://cran.r-project.org/web/checks/check_results_NAME.html</a>,
+substituting NAME by the name of your package.  In particular, wait for
+that page to be fully updated after publication of a version (which can
+take at least 48 hours) before submitting any corrections.
 </p>
 </li><li> If an update will change the package&rsquo;s API and hence affect packages
 depending on it, it is expected that you will contact the maintainers of

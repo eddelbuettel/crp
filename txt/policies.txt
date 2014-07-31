@@ -3,7 +3,7 @@
 
                              CRAN Repository Policy
 
-                           Version $Revision: 2913 $
+                           Version $Revision: 2935 $
                           CRAN Repository Maintainers
 
                                       Top
@@ -284,6 +284,12 @@ Submission
        without Windows machines of their own to use the winbuilder service to
        check a package before submission. There is a lot of helpful advice on
        writing portable packages in "Writing R Extensions".
+
+       Before submitting a package update, consult the CRAN check page at
+       http://cran.r-project.org/web/checks/check_results_NAME.html,
+       substituting NAME by the name of your package. In particular, wait for
+       that page to be fully updated after publication of a version (which
+       can take at least 48 hours) before submitting any corrections.
 
      * If an update will change the package's API and hence affect packages
        depending on it, it is expected that you will contact the maintainers
