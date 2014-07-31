@@ -3,7 +3,7 @@
 
                              CRAN Repository Policy
 
-                           Version $Revision: 3016 $
+                           Version $Revision: 3057 $
                           CRAN Repository Maintainers
 
                                       Top
@@ -99,7 +99,8 @@ Source packages
      * Packages on which a CRAN package depends should be available from a
        mainstream repository: if any mentioned in Suggests or Enhances fields
        are not from such a repository, where to obtain them should be
-       mentioned in the Description field of the DESCRIPTION file.
+       specified in the Additional_repositories field of the DESCRIPTION file
+       as a comma-separated list of repository URLs.
      * Packages will not normally be removed from CRAN: however, they may be
        archived, including at the maintainer's request.
 

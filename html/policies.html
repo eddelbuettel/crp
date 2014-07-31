@@ -80,7 +80,7 @@ p {
 
 
 
-<div align="center">Version $Revision: 3016 $
+<div align="center">Version $Revision: 3057 $
 </div>
 <div align="center"><b>CRAN Repository Maintainers</b>
 </div>
@@ -190,8 +190,9 @@ accompanied by the written agreement of the previous maintainer
 </li><li> Packages on which a CRAN package depends should be available from a
 mainstream repository: if any mentioned in <code>Suggests</code> or
 <code>Enhances</code> fields are not from such a repository, where to obtain
-them should be mentioned in the <code>Description</code> field of the
-<code>DESCRIPTION</code> file.
+them should be specified in the <code>Additional_repositories</code> field of
+the <samp>DESCRIPTION</samp> file as a comma-separated list of repository
+URLs.
 
 </li><li> Packages will not normally be removed from CRAN: however, they may
 be archived, including at the maintainer&rsquo;s request.
@@ -411,7 +412,7 @@ checking carefully for themselves.  It should be normal for those
 without Windows machines of their own to use the
 <a href="http://win-builder.R-project.org/">winbuilder</a> service to
 check a package before submission.  There is a lot of helpful advice on
-writing portable packages in <a href="../../doc/manuals/R-exts.html">&ldquo;Writing R Extensions&rdquo;</a>.
+writing portable packages in <a href="../../manuals.html#R-exts">&ldquo;Writing R Extensions&rdquo;</a>.
 </p>
 <p>Before submitting a package update, consult the CRAN check page at
 <a href="http://CRAN.R-project.org/web/checks/check_results_NAME.html">http://CRAN.R-project.org/web/checks/check_results_NAME.html</a>,
