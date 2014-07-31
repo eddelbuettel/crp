@@ -18,14 +18,19 @@ if (file.exists(prvfile)) {
 
 ## copy html file into archive
 file.copy(tmpfile, prvfile)
+basehtmlfile <- file.path("html", "policies.html")
+file.copy(tmpfile, basehtmlfile, overwrite=TRUE)
 
 ## create txt file
 txtfile <- file.path("txt", paste0("policies.r", rev, ".txt"))
 cmd <- sprintf("links -dump %s > %s", prvfile, txtfile)
 system(cmd)
+basetxtfile <- file.path("txt", "policies.txt")
+file.copy(txtfile, basetxtfile, overwrite=TRUE)
 
 ## commit html and txt file
-cmd <- sprintf("git add %s %s; git commit -m'new rev%d'; git push", prvfile, txtfile, rev)
+cmd <- sprintf("git add %s %s %s %s; git commit -m'new rev%d'; git push",
+               prvfile, basehtmlfile, txtfile, basetxtfile, rev)
 system(cmd)
 
   ## 535  links -dump html/policies.r2935.html > txt/policies.r2935.txt
