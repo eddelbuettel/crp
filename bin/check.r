@@ -54,7 +54,9 @@ system(cmd)
 ## also update svn
 system("cd ~/svn/cranpolicy && svn up && cd -")
 ## and copy
+setwd(report)
 file.copy("~/svn/cranpolicy/CRAN_policies.texi", "texi/CRAN_policies.texi", overwrite=TRUE, copy.date=TRUE)
 ## and commit
 cmd <- sprintf("git add texi/CRAN_policies.texi; git commit -m'new rev%d of texi'; git push", rev)
+system(cmd)
 
