@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2014-08-29 03:22:37 -0500 (Fri, 29 Aug 2014) $
-@set CRAN_POLICY_REVISION $Revision: 3152 $
+@set CRAN_POLICY_DATE $Date: 2014-10-17 07:27:11 -0500 (Fri, 17 Oct 2014) $
+@set CRAN_POLICY_REVISION $Revision: 3184 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -269,7 +269,7 @@ even in patched versions of R.
 @item
 Changes to @acronym{CRAN} packages causing significant disruption to
 other packages must be agreed with the @acronym{CRAN} maintainers well
-in advance of any publicity.  Introduction of new packages providing
+in advance of any publicity.  Introduction of packages providing
 back-compatibility versions of already available packages is not
 allowed.
 
@@ -331,8 +331,8 @@ following the @file{@var{PACKAGE}_@var{VERSION}.tar.gz} naming scheme.
 @item
 Please ensure that @command{R CMD check --as-cran} has been run @emph{on
 the tarball to be uploaded} before submission.  This should be done with
-the current version of R-devel (or if that is not possible, current
-R-patched or the current release of R.) 
+the current version of R-devel (or if that is not possible and explained
+in the submission, current R-patched or the current release of R.)
 
 In principle, packages must pass @command{R CMD check} without warnings or
 significant notes to be admitted to the main @acronym{CRAN} package
