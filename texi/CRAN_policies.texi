@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2015-01-28 02:38:51 -0600 (Wed, 28 Jan 2015) $
-@set CRAN_POLICY_REVISION $Revision: 3249 $
+@set CRAN_POLICY_DATE $Date: 2015-03-24 03:33:53 -0500 (Tue, 24 Mar 2015) $
+@set CRAN_POLICY_REVISION $Revision: 3298 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -33,6 +33,7 @@
 * Source packages::             
 * Binary packages::             
 * Submission::                  
+* Re-submission::               
 @end menu
 
 @end ifnottex
@@ -306,7 +307,11 @@ Their packages are made automatically by batch jobs and can take a day
 or two to appear on the CRAN master site (maybe longer to reach CRAN
 mirrors).
 
-@node Submission,  , Binary packages, Top
+Questions about binary packages should be addressed to those responsible
+for building them: Simon Urbanek (OS X) and Uwe Ligges (Windows); email
+addresses @samp{@var{First.Lastname}@@R-project.org}.
+
+@node Submission, Re-submission, Binary packages, Top
 @unnumbered Submission
 
 When submitting a package to CRAN you should use the submission form at
@@ -427,7 +432,18 @@ function @url{http://developer.R-project.org/CRAN/Scripts/depends.R,
 reverse_dependencies_with_maintainers} is available from the developer 
 website. 
 
-
 @end itemize
+
+@node Re-submission,  , Submission, Top
+@unnumbered Re-submission
+
+Re-submission is done in the same way as submission, using the `Optional
+comment' field on the webform (and not a separate email) to explain how
+the feedback on previous submission(s) has been addressed.
+
+Updates to already-published packages must have an increased version
+number unless a `same-version update' is requested by the maintainers.
+Increasing the version number at each submission reduces confusion so is
+preferred even when a previous submission was not accepted.
 
 @bye
