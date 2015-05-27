@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2015-03-24 03:33:53 -0500 (Tue, 24 Mar 2015) $
-@set CRAN_POLICY_REVISION $Revision: 3298 $
+@set CRAN_POLICY_DATE $Date: 2015-05-27 10:46:50 -0500 (Wed, 27 May 2015) $
+@set CRAN_POLICY_REVISION $Revision: 3328 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -323,7 +323,9 @@ If this fails, upload by anonymous @command{ftp} to
 ASCII) email at the same time, with subject line as specified below.
 
 In either case, you can check that the submission was received by
-looking at @uref{ftp://CRAN.R-project.org/incoming/}.
+looking at @uref{ftp://CRAN.R-project.org/incoming/}.  Submission
+difficulties (such as non-receipt of the confirmation email) can be
+discussed with @email{cran-sysadmin@@R-project.org}.
 
 In more detail:
 
