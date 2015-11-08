@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2015-10-22 08:32:26 -0500 (Thu, 22 Oct 2015) $
-@set CRAN_POLICY_REVISION $Revision: 3408 $
+@set CRAN_POLICY_DATE $Date: 2015-11-08 09:58:10 -0600 (Sun, 08 Nov 2015) $
+@set CRAN_POLICY_REVISION $Revision: 3412 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -42,13 +42,13 @@
 @unnumbered Preamble
 
 This document describes the policies in place for the
-@url{http://www.R-project.org/, R} package repository hosted by the
-@url{http://CRAN.R-project.org/, Comprehensive R Archive Network}.  In
-what follows, this @url{http://CRAN.R-project.org/web/packages/, CRAN
+@url{https://www.R-project.org/, R} package repository hosted by the
+@url{https://CRAN.R-project.org/, Comprehensive R Archive Network}.  In
+what follows, this @url{https://CRAN.R-project.org/web/packages/, CRAN
 package repository} will be referred to as ``CRAN''.
 
 CRAN is maintained by the efforts of volunteers (the ``CRAN team'') and
-the resources of the @url{http://www.R-project.org/foundation/main.html,
+the resources of the @url{https://www.R-project.org/foundation/main.html,
 R Foundation} and the employers of those volunteers
 (WU Wien, TU Dortmund, U Oxford, AT&T Research).  Having a package
 distributed by CRAN is subject to a set of policies, and submitting a
@@ -142,8 +142,8 @@ appropriate place to host them.
 @item
 Packages should be named in a way that does not conflict (irrespective
 of case) with any current or past CRAN package (the
-@url{http://CRAN.R-project.org/src/contrib/Archive/, Archive area} can be
-consulted), nor any current @url{http://www.bioconductor.org/,
+@url{https://CRAN.R-project.org/src/contrib/Archive/, Archive area} can be
+consulted), nor any current @url{https://www.bioconductor.org/,
 Bioconductor} package.  Package maintainers give the right to use that
 package name to CRAN when they submit, so the CRAN team may orphan a
 package and allow another maintainer to take it over.
@@ -323,7 +323,7 @@ addresses @samp{@var{First.Lastname}@@R-project.org}.
 @unnumbered Submission
 
 When submitting a package to CRAN you should use the submission form at
-@uref{http://CRAN.R-project.org/submit.html} (and not send an email).
+@uref{https://CRAN.R-project.org/submit.html} (and not send an email).
 You will be sent a confirmation email which needs to be accepted.
 
 If this fails, upload by anonymous @command{ftp} to
@@ -366,9 +366,11 @@ For a package update, please check that any packages depending on this
 one still pass @command{R CMD check}: it is especially expected that you
 will have checked your own packages.  Reverse dependencies can
 conveniently be checked using @code{tools::check_packages_in_dir(reverse
-= list())}.  A listing of the reverse dependencies of the current
-version can be found on the CRAN web page for the package, or be
-obtained via @code{tools::package_dependencies(reverse = TRUE)}.
+= list())}, and changes in check status subsequently be analyzed using
+@code{tools::check_packages_in_dir_changes()}.  A listing of the reverse
+dependencies of the current version can be found on the CRAN web page
+for the package, or be obtained via
+@code{tools::package_dependencies(reverse = TRUE)}.
 
 @item
 An @command{ftp} upload should be accompanied by an email to
@@ -424,7 +426,7 @@ writing portable packages in @url{../../manuals.html#R-exts,
 ``Writing R Extensions''}.
 
 Before submitting a package update, consult the CRAN check page at
-@samp{http://CRAN.R-project.org/web/checks/check_results_NAME.html},
+@samp{https://CRAN.R-project.org/web/checks/check_results_NAME.html},
 substituting NAME by the name of your package.  In particular, wait for
 that page to be fully updated after publication of a version (which can
 take at least 48 hours) before submitting any corrections.
@@ -438,7 +440,7 @@ the submission email which packages are affected and that their
 maintainers have been informed.
 In order to derive the reverse dependencies of a package including the 
 addresses of maintainers who have to be notified upon changes, the 
-function @url{http://developer.R-project.org/CRAN/Scripts/depends.R, 
+function @url{https://developer.R-project.org/CRAN/Scripts/depends.R, 
 reverse_dependencies_with_maintainers} is available from the developer 
 website. 
 
