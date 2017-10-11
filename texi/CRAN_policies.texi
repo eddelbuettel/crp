@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2015-11-18 03:30:23 -0600 (Wed, 18 Nov 2015) $
-@set CRAN_POLICY_REVISION $Revision: 3415 $
+@set CRAN_POLICY_DATE $Date: 2017-10-11 01:35:09 -0500 (Wed, 11 Oct 2017) $
+@set CRAN_POLICY_REVISION $Revision: 3747 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -171,6 +171,11 @@ conditionally in examples or tests if it cannot straightforwardly be
 installed on the major R platforms.
 
 @item
+CRAN versions of packages should work with the current CRAN and 
+Bioconductor releases of dependent packages and not anticipate nor 
+recommend development versions of such packages on other repositories.
+
+@item
 Packages will not normally be removed from CRAN: however, they may
 be archived, including at the maintainer's request.
 
@@ -283,6 +288,11 @@ in advance of any publicity.  Introduction of packages providing
 back-compatibility versions of already available packages is not
 allowed.
 
+@item
+Downloads of additional software or data as part of package installation
+or startup should only use @emph{secure} download mechanisms (e.g.,
+@samp{https} or @samp{ftps}).
+
 @end itemize
 
 @node Binary packages, Submission, Source packages, Top
@@ -331,11 +341,7 @@ When submitting a package to CRAN you should use the submission form at
 @uref{https://CRAN.R-project.org/submit.html} (and not send an email).
 You will be sent a confirmation email which needs to be accepted.
 
-If this fails, upload by anonymous @command{ftp} to
-@uref{ftp://CRAN.R-project.org/@/incoming/} and send a (plain text
-ASCII) email at the same time, with subject line as specified below.
-
-In either case, you can check that the submission was received by
+You can check that the submission was received by
 looking at @uref{ftp://CRAN.R-project.org/incoming/}.  Submission
 difficulties (such as non-receipt of the confirmation email) can be
 discussed with @email{cran-sysadmin@@R-project.org}.
@@ -345,7 +351,7 @@ In more detail:
 @itemize
 
 @item
-All correspondence with CRAN must be sent to @code{CRAN@@R-project.org}
+All correspondence with CRAN must be sent to @code{CRAN-submissions@@R-project.org}
 (not members of the team) and be in plain text ASCII (and not HTML).
 
 @item
@@ -357,6 +363,9 @@ Please ensure that @command{R CMD check --as-cran} has been run @emph{on
 the tarball to be uploaded} before submission.  This should be done with
 the current version of R-devel (or if that is not possible and explained
 in the submission, current R-patched or the current release of R.)
+For new submissions in particular, please take care to include an
+informative @code{Description} field. See
+@uref{submission_checklist.html} for details.
 
 In principle, packages must pass @command{R CMD check} without warnings or
 significant notes to be admitted to the main @acronym{CRAN} package
@@ -378,28 +387,18 @@ for the package, or be obtained via
 @code{tools::package_dependencies(reverse = TRUE)}.
 
 @item
-An @command{ftp} upload should be accompanied by an email to
-@email{CRAN@@R-project.org} sent from the maintainer address listed in
-the package, and using the subject line `CRAN submission @var{PACKAGE}
-@var{VERSION}', where @var{PACKAGE} and @var{VERSION} are the package
-name and version, respectively.
-
 If for some reason the submission has to be made by someone else (for
 example, a co-author) this needs to be explained, and the designated
 maintainer will need to confirm the submission.
 
-For a new submission, confirm in your email that you have read and agree
-to these policies.  (This includes new versions of previously archived
-packages, and the first submission as the new maintainer for a package.)
-
 @item
 Explain any change in the maintainer's email address and if possible
 send confirmation from the previous address (by a separate email to
-@code{CRAN@@R-project.org}) or explain why it is not possible.
+@code{CRAN-submissions@@R-project.org}) or explain why it is not possible.
 
 If the package needs special treatment (for example if vignettes can
 only be run or re-built on the maintainer's machine or take a very long
-time), say so in the submission email or on the submission form.
+time), say so on the submission form.
 
 @item
 Do not email the package itself.
@@ -425,7 +424,7 @@ rounds), ``no more than every 1--2 months'' seems appropriate.
 Authors can avoid a lot of the all too frequent rounds of updates by
 checking carefully for themselves.  It should be normal for those
 without Windows machines of their own to use the
-@url{http://win-builder.R-project.org/, winbuilder} service to
+@url{https://win-builder.R-project.org/, winbuilder} service to
 check a package before submission.  There is a lot of helpful advice on
 writing portable packages in @url{../../manuals.html#R-exts,
 ``Writing R Extensions''}.
@@ -439,7 +438,8 @@ take at least 48 hours) before submitting any corrections.
 @item
 If an update will change the package's API and hence affect packages
 depending on it, it is expected that you will contact the maintainers of
-affected packages and suggest changes, and give them time to prepare
+affected packages and suggest changes, and give them time (at least 2
+weeks, ideally more) to prepare
 updates before submitting your updated package.  Do mention in
 the submission email which packages are affected and that their
 maintainers have been informed.
