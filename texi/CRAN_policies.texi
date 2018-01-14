@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2017-11-28 05:57:15 -0600 (Tue, 28 Nov 2017) $
-@set CRAN_POLICY_REVISION $Revision: 3776 $
+@set CRAN_POLICY_DATE $Date: 2018-01-14 05:51:59 -0600 (Sun, 14 Jan 2018) $
+@set CRAN_POLICY_REVISION $Revision: 3815 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -245,11 +245,12 @@ should only be done with the agreement of the maintainer of that
 package.
 
 @item
-Packages should not write in the users' home filespace, nor anywhere
-else on the file system apart from the R session's temporary directory
-(or during installation in the location pointed to by @env{TMPDIR}: and
-such usage should be cleaned up).  Installing into the system's R
-installation (e.g., scripts to its @file{bin} directory) is not allowed.
+Packages should not write in the user's home filespace (including
+clipboards), nor anywhere else on the file system apart from the R
+session's temporary directory (or during installation in the location
+pointed to by @env{TMPDIR}: and such usage should be cleaned up).
+Installing into the system's R installation (e.g., scripts to its
+@file{bin} directory) is not allowed.
 
 Limited exceptions may be allowed in interactive sessions if the
 package obtains confirmation from the user.
