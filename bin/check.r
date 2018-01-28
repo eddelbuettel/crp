@@ -1,7 +1,7 @@
 #!/usr/bin/r
 
 tmpfile <- tempfile(pattern = "crp", fileext = ".html")
-polurl  <- "http://cran.r-project.org/web/packages/policies.html"
+polurl  <- "https://cran.r-project.org/web/packages/policies.html"
 report  <- file.path("~", "git", "crp")
 setwd(report)
 
