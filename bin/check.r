@@ -28,9 +28,22 @@ system(cmd)
 basetxtfile <- file.path("txt", "policies.txt")
 file.copy(txtfile, basetxtfile, overwrite=TRUE)
 
+## --
+## also update svn
+system("cd ~/svn/cranpolicy && svn up && cd -")
+## and copy
+setwd(report)
+texifile <- "texi/CRAN_policies.texi"
+file.copy("~/svn/cranpolicy/CRAN_policies.texi", texifile, overwrite=TRUE, copy.date=TRUE)
+## and commit
+#cmd <- sprintf("git add texi/CRAN_policies.texi; git commit -m'new rev%d of texi'; git push", rev)
+#system(cmd)
+## --
+
+
 ## commit html and txt file
-cmd <- sprintf("git add %s %s %s %s; git commit -m'new rev%d'; git push",
-               prvfile, basehtmlfile, txtfile, basetxtfile, rev)
+cmd <- sprintf("git add %s %s %s %s %s; git commit -m'new rev%d'; git push",
+               prvfile, basehtmlfile, txtfile, basetxtfile, texifile, rev)
 system(cmd)
 
   ## 535  links -dump html/policies.r2935.html > txt/policies.r2935.txt
@@ -51,12 +64,4 @@ close(con)
 cmd <- sprintf("mailx -s 'New CRAN Repo Policy revision %d found' edd@debian.org", rev)
 system(cmd)
 
-## also update svn
-system("cd ~/svn/cranpolicy && svn up && cd -")
-## and copy
-setwd(report)
-file.copy("~/svn/cranpolicy/CRAN_policies.texi", "texi/CRAN_policies.texi", overwrite=TRUE, copy.date=TRUE)
-## and commit
-cmd <- sprintf("git add texi/CRAN_policies.texi; git commit -m'new rev%d of texi'; git push", rev)
-system(cmd)
 
