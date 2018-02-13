@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2018-01-14 05:51:59 -0600 (Sun, 14 Jan 2018) $
-@set CRAN_POLICY_REVISION $Revision: 3815 $
+@set CRAN_POLICY_DATE $Date: 2018-02-13 11:06:34 -0600 (Tue, 13 Feb 2018) $
+@set CRAN_POLICY_REVISION $Revision: 3838 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -54,6 +54,9 @@ R Foundation} and the employers of those volunteers
 distributed by CRAN is subject to a set of policies, and submitting a
 package (including an update) to CRAN indicates agreement to these
 policies.
+
+CRAN hosts packages in publication quality and is not a development 
+platform. A package's contribution has to be non-trivial.
 
 Distributing code or documentation is subject to legal requirements,
 and CRAN operates in many jurisdictions.  One of the aims of these
