@@ -7,9 +7,9 @@ setwd(report)
 
 download.file(url=polurl, destfile=tmpfile, quiet=TRUE, cacheOK=FALSE)
 pols <- readLines(tmpfile)
-ind <- which(grepl("Version \\$Revision: \\d+ \\$$", pols))
+ind <- which(grepl("Version \\$Revision: \\d+ \\$", pols))
 
-rev <- as.numeric(gsub(".*Version \\$Revision: (\\d+) \\$$", "\\1", pols[ind], perl=TRUE))
+rev <- as.numeric(gsub(".*Version \\$Revision: (\\d+) \\$.*", "\\1", pols[ind], perl=TRUE))
 
 prvfile <- file.path("html", paste0("policies.r", rev, ".html"))
 if (file.exists(prvfile)) {
