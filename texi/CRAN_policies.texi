@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2018-02-13 11:06:34 -0600 (Tue, 13 Feb 2018) $
-@set CRAN_POLICY_REVISION $Revision: 3838 $
+@set CRAN_POLICY_DATE $Date: 2018-05-10 10:52:14 -0500 (Thu, 10 May 2018) $
+@set CRAN_POLICY_REVISION $Revision: 3874 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -365,6 +365,7 @@ All correspondence with CRAN must be sent to @code{CRAN-submissions@@R-project.o
 @item
 Uploads must be source tarballs created by @command{R CMD build} and
 following the @file{@var{PACKAGE}_@var{VERSION}.tar.gz} naming scheme.
+This should be done with current R-patched or the current release of R.
 
 @item
 Please ensure that @command{R CMD check --as-cran} has been run @emph{on
@@ -466,9 +467,15 @@ Re-submission is done in the same way as submission, using the `Optional
 comment' field on the webform (and not a separate email) to explain how
 the feedback on previous submission(s) has been addressed.
 
-Updates to already-published packages must have an increased version
+Updates to previously-published packages must have an increased version
 number unless a `same-version update' is requested by the maintainers.
 Increasing the version number at each submission reduces confusion so is
 preferred even when a previous submission was not accepted.
+
+For packages which have recently been archived, a snapshot of the CRAN
+results page at the time of archival may be available under
+@uref{https://cran-archive.r-project.org/web/checks/}.  (Note that only
+a few of the links from the snapshot will work: normally those to
+listed `Alternative issues' will.)
 
 @bye
