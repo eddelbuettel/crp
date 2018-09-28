@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2018-05-10 10:52:14 -0500 (Thu, 10 May 2018) $
-@set CRAN_POLICY_REVISION $Revision: 3874 $
+@set CRAN_POLICY_DATE $Date: 2018-09-28 05:12:41 -0500 (Fri, 28 Sep 2018) $
+@set CRAN_POLICY_REVISION $Revision: 3923 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -306,7 +306,7 @@ or startup should only use @emph{secure} download mechanisms (e.g.,
 @node Binary packages, Submission, Source packages, Top
 @unnumbered Binary packages
 
-Policies for when a (Windows or OS X) binary package will be distributed:
+Policies for when a (Windows or macOS) binary package will be distributed:
 
 @itemize
 
@@ -339,7 +339,7 @@ built for the last version in the previous series (e.g.@: R 3.1.3 when R
 3.2.x is current) or for R-devel.
 
 Questions about binary packages should be addressed to those responsible
-for building them: Simon Urbanek (OS X) and Uwe Ligges (Windows); email
+for building them: Simon Urbanek (macOS) and Uwe Ligges (Windows); email
 addresses @samp{@var{First.Lastname}@@R-project.org}.
 
 @node Submission, Re-submission, Binary packages, Top
