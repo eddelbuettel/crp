@@ -61,7 +61,7 @@ cat(sprintf("New CRAN Repository Policy rev%d posted, history at %s #rstats",
 close(con)
 
 ## send me a mail too
-cmd <- sprintf("mailx -s 'New CRAN Repo Policy revision %d found' edd@debian.org", rev)
+cmd <- sprintf("echo '' | mailx -s 'New CRAN Repo Policy revision %d found' edd@debian.org", rev)
 system(cmd)
 
 

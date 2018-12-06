@@ -1,9 +1,8 @@
-crp
-===
+## crp
 
 Archived copies of the CRAN Repo Policy
 
-## Status
+### Status
 
 This small project started out as simple monitoring of the single webpage
 http://cran.r-project.org/web/packages/policies.html which was done with 
@@ -20,3 +19,17 @@ So for now, the best view of the evolution may be the history of the texi
 source, eg via
 
    https://github.com/eddelbuettel/crp/commits/master/texi
+
+### Twitter Updates
+
+You can follow [@CRANPolicyWatch](https://twitter.com/CRANPolicyWatch) on
+Twitter to receive a tweet whenever a change in the CRAN Repo Policy is
+detected and reported.
+
+### Author
+
+The scripts in this repo were written by Dirk Eddelbuettel
+
+### License
+
+GPL (>= 2)
