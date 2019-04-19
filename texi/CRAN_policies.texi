@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2019-04-19 06:29:36 -0500 (Fri, 19 Apr 2019) $
-@set CRAN_POLICY_REVISION $Revision: 4049 $
+@set CRAN_POLICY_DATE $Date: 2019-04-19 14:11:15 -0500 (Fri, 19 Apr 2019) $
+@set CRAN_POLICY_REVISION $Revision: 4050 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -479,9 +479,9 @@ maintainers.  Increasing the version number at each submission reduces
 confusion so is preferred even when a previous submission was not
 accepted.
 
-An update to a published package should not add any installation
-requirements (such as new packages in @samp{Depends}, @samp{Imports} or
-@samp{LinkingTo} rather than @samp{Suggests}).
+@c An update to a published package should not add any installation
+@c requirements (such as new packages in @samp{Depends}, @samp{Imports} or
+@c @samp{LinkingTo} rather than @samp{Suggests}).
 
 For packages which have been archived since February 2018, a snapshot of
 the CRAN results page at the time of archival will be available under
