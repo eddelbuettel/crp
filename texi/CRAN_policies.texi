@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2018-12-04 02:37:15 -0600 (Tue, 04 Dec 2018) $
-@set CRAN_POLICY_REVISION $Revision: 3953 $
+@set CRAN_POLICY_DATE $Date: 2019-04-19 06:29:36 -0500 (Fri, 19 Apr 2019) $
+@set CRAN_POLICY_REVISION $Revision: 4049 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -174,9 +174,10 @@ conditionally in examples or tests if it cannot straightforwardly be
 installed on the major R platforms.
 
 @item
-CRAN versions of packages should work with the current CRAN and 
-Bioconductor releases of dependent packages and not anticipate nor 
-recommend development versions of such packages on other repositories.
+CRAN versions of packages should work with the current CRAN and
+Bioconductor releases of packages they depend on and not anticipate nor
+recommend development versions of such packages (or themselves) on other
+repositories.
 
 @item
 Packages will not normally be removed from CRAN: however, they may
@@ -289,7 +290,8 @@ usages can cause packages to break at any time, even in patched versions
 of R.
 
 @item
-Packages should not attempt to disable compiler diagnostics.
+Packages should not attempt to disable compiler diagnostics, nor to
+remove other diagnostic information such as symbols in shared objects.
 
 @end itemize
 
@@ -472,14 +474,19 @@ comment' field on the webform (and not a separate email) to explain how
 the feedback on previous submission(s) has been addressed.
 
 Updates to previously-published packages must have an increased version
-number unless a `same-version update' is requested by the maintainers.
-Increasing the version number at each submission reduces confusion so is
-preferred even when a previous submission was not accepted.
+number unless a `same-version update' is requested by the CRAN
+maintainers.  Increasing the version number at each submission reduces
+confusion so is preferred even when a previous submission was not
+accepted.
 
-For packages which have recently been archived, a snapshot of the CRAN
-results page at the time of archival may be available under
+An update to a published package should not add any installation
+requirements (such as new packages in @samp{Depends}, @samp{Imports} or
+@samp{LinkingTo} rather than @samp{Suggests}).
+
+For packages which have been archived since February 2018, a snapshot of
+the CRAN results page at the time of archival will be available under
 @uref{https://cran-archive.r-project.org/web/checks/}.  (Note that only
-a few of the links from the snapshot will work: normally those to
-listed `Alternative issues' will.)
+a few of the links from the snapshot will work: normally those to listed
+`Alternative issues' will.)
 
 @bye
