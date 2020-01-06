@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2019-04-19 14:11:15 -0500 (Fri, 19 Apr 2019) $
-@set CRAN_POLICY_REVISION $Revision: 4050 $
+@set CRAN_POLICY_DATE $Date: 2020-01-06 04:51:20 -0600 (Mon, 06 Jan 2020) $
+@set CRAN_POLICY_REVISION $Revision: 4168 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -473,9 +473,9 @@ Re-submission is done in the same way as submission, using the `Optional
 comment' field on the webform (and not a separate email) to explain how
 the feedback on previous submission(s) has been addressed.
 
-Updates to previously-published packages must have an increased version
-number unless a `same-version update' is requested by the CRAN
-maintainers.  Increasing the version number at each submission reduces
+Updates to previously-published packages must have an increased version.
+@c number unless a `same-version update' is requested by the CRAN maintainers.
+Increasing the version number at each submission reduces
 confusion so is preferred even when a previous submission was not
 accepted.
 
