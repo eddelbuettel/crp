@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2020-01-06 04:51:20 -0600 (Mon, 06 Jan 2020) $
-@set CRAN_POLICY_REVISION $Revision: 4168 $
+@set CRAN_POLICY_DATE $Date: 2020-01-07 01:12:42 -0600 (Tue, 07 Jan 2020) $
+@set CRAN_POLICY_REVISION $Revision: 4169 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -55,7 +55,7 @@ distributed by CRAN is subject to a set of policies, and submitting a
 package (including an update) to CRAN indicates agreement to these
 policies.
 
-CRAN hosts packages in publication quality and is not a development 
+CRAN hosts packages of publication quality and is not a development 
 platform. A package's contribution has to be non-trivial.
 
 Distributing code or documentation is subject to legal requirements,
@@ -80,9 +80,9 @@ is copied (or derived) from the work of others (including from R
 itself), care must be taken that any copyright/license statements are
 preserved and authorship is not misrepresented.
 
-Preferably, an @samp{Authors@@R} would be used with @samp{ctb} roles for
-the authors of such code.  Alternatively, the @samp{Author} field should
-list these authors as contributors.
+Preferably, an @samp{Authors@@R} field would be used with @samp{ctb}
+roles for the authors of such code.  Alternatively, the @samp{Author}
+field should list these authors as contributors.
 
 Where copyrights are held by an entity other than the package authors,
 this should preferably be indicated via @samp{cph} roles in the
@@ -423,13 +423,13 @@ Once uploaded, no further submissions of that package should be made
 whilst the uploaded version is pending processing (which may take a
 few days) and you have not received a reply from a CRAN maintainer.
 
-@item
-Part of the processing is that uploads may be renamed by adding one of
-the extensions @file{.nowebform}, @file{.pending} or @file{.noemail}:  the
-presence of such a file is a sign that the submission process is not 
-finished yet and CRAN maintainers are waiting for response or 
-resubmission from the package maintainer (and such a file name should 
-never be uploaded).
+@c @item
+@c Part of the processing is that uploads may be renamed by adding one of
+@c the extensions @file{.nowebform}, @file{.pending} or @file{.noemail}:  the
+@c presence of such a file is a sign that the submission process is not 
+@c finished yet and CRAN maintainers are waiting for response or 
+@c resubmission from the package maintainer (and such a file name should 
+@c never be uploaded).
 
 @item
 Submitting updates should be done responsibly and with respect for the
