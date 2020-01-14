@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2020-01-07 01:12:42 -0600 (Tue, 07 Jan 2020) $
-@set CRAN_POLICY_REVISION $Revision: 4169 $
+@set CRAN_POLICY_DATE $Date: 2020-01-13 22:45:03 -0600 (Mon, 13 Jan 2020) $
+@set CRAN_POLICY_REVISION $Revision: 4170 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -171,7 +171,13 @@ described in the @samp{Description} field.
 
 A package listed in @samp{Suggests} or @samp{Enhances} should be used
 conditionally in examples or tests if it cannot straightforwardly be
-installed on the major R platforms.
+installed on the major R platforms.  (`Writing R Extensions' recommends
+that they are @emph{always} used conditionally.)
+
+Orphaned CRAN packages should not be strict requirements (in the
+@samp{Depends}, @samp{Imports} or @samp{LinkingTo} fields).  They are
+allowed in @samp{Suggests} if used conditionally, although this is
+discouraged.
 
 @item
 CRAN versions of packages should work with the current CRAN and
