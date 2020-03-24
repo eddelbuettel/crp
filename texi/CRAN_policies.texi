@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2020-01-13 22:45:03 -0600 (Mon, 13 Jan 2020) $
-@set CRAN_POLICY_REVISION $Revision: 4170 $
+@set CRAN_POLICY_DATE $Date: 2020-03-24 02:32:23 -0500 (Tue, 24 Mar 2020) $
+@set CRAN_POLICY_REVISION $Revision: 4197 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -235,8 +235,8 @@ the package.
 
 @item
 Packages which use Internet resources should fail gracefully with an
-informative message if the resource is not available (and not give a
-check warning nor error).
+informative message if the resource is not available or has changed (and
+not give a check warning nor error).
 
 @item
 The code and examples provided in a package should never do anything
