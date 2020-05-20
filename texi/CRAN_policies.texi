@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2020-03-24 02:32:23 -0500 (Tue, 24 Mar 2020) $
-@set CRAN_POLICY_REVISION $Revision: 4197 $
+@set CRAN_POLICY_DATE $Date: 2020-05-19 22:09:11 -0500 (Tue, 19 May 2020) $
+@set CRAN_POLICY_REVISION $Revision: 4255 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -50,7 +50,7 @@ package repository} will be referred to as ``CRAN''.
 CRAN is maintained by the efforts of volunteers (the ``CRAN team'') and
 the resources of the @url{https://www.R-project.org/foundation/index.html,
 R Foundation} and the employers of those volunteers
-(WU Wien, TU Dortmund, U Oxford, AT&T Research).  Having a package
+(WU Wien, TU Dortmund, U Oxford, U Auckland).  Having a package
 distributed by CRAN is subject to a set of policies, and submitting a
 package (including an update) to CRAN indicates agreement to these
 policies.
