@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2020-05-19 22:09:11 -0500 (Tue, 19 May 2020) $
-@set CRAN_POLICY_REVISION $Revision: 4255 $
+@set CRAN_POLICY_DATE $Date: 2020-05-21 03:21:02 -0500 (Thu, 21 May 2020) $
+@set CRAN_POLICY_REVISION $Revision: 4256 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -175,9 +175,9 @@ installed on the major R platforms.  (`Writing R Extensions' recommends
 that they are @emph{always} used conditionally.)
 
 Orphaned CRAN packages should not be strict requirements (in the
-@samp{Depends}, @samp{Imports} or @samp{LinkingTo} fields).  They are
-allowed in @samp{Suggests} if used conditionally, although this is
-discouraged.
+@samp{Depends}, @samp{Imports} or @samp{LinkingTo} fields, including
+indirectly).  They are allowed in @samp{Suggests} if used conditionally,
+although this is discouraged.
 
 @item
 CRAN versions of packages should work with the current CRAN and
@@ -247,9 +247,10 @@ illustrative examples from past experience.
 
 @item
 Compiled code should never terminate the R process within which it is
-running.  Thus C/C++ calls to @code{assert}/@code{abort}/@code{exit},
-Fortran calls to @code{STOP} and so on must be avoided.  Nor may R code
-call @code{q()}.
+running.  Thus C/C++ calls to
+@code{assert}/@code{abort}/@code{exit}/@code{std::terminate}, Fortran
+calls to @code{STOP} and so on must be avoided.  Nor may R code call
+@code{q()}.
 
 @item
 A package must not tamper with the code already loaded into R: any
