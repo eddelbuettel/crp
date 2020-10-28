@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2020-10-27 08:08:24 -0500 (Tue, 27 Oct 2020) $
-@set CRAN_POLICY_REVISION $Revision: 4333 $
+@set CRAN_POLICY_DATE $Date: 2020-10-28 02:11:45 -0500 (Wed, 28 Oct 2020) $
+@set CRAN_POLICY_REVISION $Revision: 4334 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -411,7 +411,7 @@ for the package, or be obtained via
 @code{tools::package_dependencies(reverse = TRUE)}.
 If possible, check reverse strong dependencies, reverse suggests and the
 recursive strong dependencies of these 
-(by @code{tools::package_dependencies(reverse = "most", recursive = "strong")}).
+(by @code{tools::package_dependencies(reverse = TRUE, which = "most", recursive = "strong")}).
 
 @item
 If for some reason the submission has to be made by someone else (for
