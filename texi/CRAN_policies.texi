@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2020-10-28 02:11:45 -0500 (Wed, 28 Oct 2020) $
-@set CRAN_POLICY_REVISION $Revision: 4334 $
+@set CRAN_POLICY_DATE $Date: 2020-10-29 11:14:23 -0500 (Thu, 29 Oct 2020) $
+@set CRAN_POLICY_REVISION $Revision: 4336 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -276,6 +276,13 @@ Installing into the system's R installation (e.g., scripts to its
 Limited exceptions may be allowed in interactive sessions if the
 package obtains confirmation from the user.
 
+For R version 4.0 or later (hence a version dependency is required or
+only conditional use is possible), packages may store user-specific
+data, configuration and cache files in their respective user directories
+obtained from @code{tools::R_user_dir()}, provided that by default sizes
+are kept as small as possible and the contents are actively managed
+(including removing outdated material).
+
 @item
 Packages should not modify the global environment (user's workspace).
 
@@ -306,6 +313,10 @@ of R.
 Packages should not attempt to disable compiler diagnostics, nor to
 remove other diagnostic information such as symbols in shared objects.
 
+@item
+Security provisions must not be cicrumvented, for example by not
+verifying SSL certificates.
+
 @end itemize
 
 @item
@@ -318,7 +329,8 @@ allowed.
 @item
 Downloads of additional software or data as part of package installation
 or startup should only use @emph{secure} download mechanisms (e.g.,
-@samp{https} or @samp{ftps}).
+@samp{https} or @samp{ftps}).  For downloads of more than a few MB,
+ensure that a sufficiently large timeout is set.
 
 @end itemize
 
