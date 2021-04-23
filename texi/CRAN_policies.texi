@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2020-10-29 11:14:23 -0500 (Thu, 29 Oct 2020) $
-@set CRAN_POLICY_REVISION $Revision: 4336 $
+@set CRAN_POLICY_DATE $Date: 2021-04-23 05:27:36 -0500 (Fri, 23 Apr 2021) $
+@set CRAN_POLICY_REVISION $Revision: 4540 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -314,7 +314,7 @@ Packages should not attempt to disable compiler diagnostics, nor to
 remove other diagnostic information such as symbols in shared objects.
 
 @item
-Security provisions must not be cicrumvented, for example by not
+Security provisions must not be circumvented, for example by not
 verifying SSL certificates.
 
 @end itemize
@@ -494,7 +494,7 @@ website.
 @unnumbered Re-submission
 
 Re-submission is done in the same way as submission, using the `Optional
-comment' field on the webform (and not a separate email) to explain how
+comment' field on the web form (and not a separate email) to explain how
 the feedback on previous submission(s) has been addressed.
 
 Updates to previously-published packages must have an increased version.
