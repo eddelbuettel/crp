@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2021-04-23 05:27:36 -0500 (Fri, 23 Apr 2021) $
-@set CRAN_POLICY_REVISION $Revision: 4540 $
+@set CRAN_POLICY_DATE $Date: 2021-04-25 02:49:08 -0500 (Sun, 25 Apr 2021) $
+@set CRAN_POLICY_REVISION $Revision: 4548 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -381,7 +381,7 @@ When submitting a package to CRAN you should use the submission form at
 You will be sent a confirmation email which needs to be accepted.
 
 You can check that the submission was received by
-looking at @uref{ftp://CRAN.R-project.org/incoming/}.  Submission
+looking at @uref{https://CRAN.R-project.org/incoming/}.  Submission
 difficulties (such as non-receipt of the confirmation email) can be
 discussed with @email{cran-sysadmin@@R-project.org}.
 
