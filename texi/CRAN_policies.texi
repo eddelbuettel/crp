@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2021-04-25 02:49:08 -0500 (Sun, 25 Apr 2021) $
-@set CRAN_POLICY_REVISION $Revision: 4548 $
+@set CRAN_POLICY_DATE $Date: 2021-09-25 05:14:21 -0500 (Sat, 25 Sep 2021) $
+@set CRAN_POLICY_REVISION $Revision: 4769 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -511,6 +511,11 @@ For packages which have been archived since February 2018, a snapshot of
 the CRAN results page at the time of archival will be available under
 @uref{https://cran-archive.r-project.org/web/checks/}.  (Note that only
 a few of the links from the snapshot will work: normally those to listed
-`Alternative issues' will.)
+`Additional issues' will.)
+
+A package showing issues for @code{macos-arm64} or an `M1mac' additional
+issue should be checked using the
+@url{https://mac.r-project.org/macbuilder/submit.html, macbuilder}
+service prior to re-submission.
 
 @bye
