@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2022-02-03 05:58:35 -0600 (Thu, 03 Feb 2022) $
-@set CRAN_POLICY_REVISION $Revision: 5027 $
+@set CRAN_POLICY_DATE $Date: 2022-05-03 11:14:57 -0500 (Tue, 03 May 2022) $
+@set CRAN_POLICY_REVISION $Revision: 5236 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -102,7 +102,9 @@ The package's @file{DESCRIPTION} file must show both the name and email
 address of a single designated maintainer (a person, not a mailing
 list).  That contact address must be kept up to date, and be usable for
 information mailed by the CRAN team without any form of filtering,
-confirmation @dots{}
+confirmation @dots{}.  Forwarding mail from the maintainer address
+increasingly results in confusing non-delivery notifications to the
+original sender, so is best avoided.
 
 The maintainer warrants that (s)he is acting on behalf of all credited
 authors and has their agreement to use their material in the way it is
