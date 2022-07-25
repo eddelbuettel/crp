@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2022-05-03 11:14:57 -0500 (Tue, 03 May 2022) $
-@set CRAN_POLICY_REVISION $Revision: 5236 $
+@set CRAN_POLICY_DATE $Date: 2022-07-25 03:14:15 -0500 (Mon, 25 Jul 2022) $
+@set CRAN_POLICY_REVISION $Revision: 5316 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -247,7 +247,8 @@ informative message if the resource is not available or has changed (and
 not give a check warning nor error).
 
 @item
-(@strong{Using external C/C++/Fortran libraries.})  Where a package
+@c We have seen rust libraries.
+(@strong{Using external C/C++/Fortran/other libraries.})  Where a package
 wishes to make use of a library not written solely for the package, the
 package installation should first look to see if it is already installed
 and if so is of a suitable version.  In case not, it is desirable to
