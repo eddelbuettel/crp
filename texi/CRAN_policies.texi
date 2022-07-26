@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2022-07-25 03:14:15 -0500 (Mon, 25 Jul 2022) $
-@set CRAN_POLICY_REVISION $Revision: 5316 $
+@set CRAN_POLICY_DATE $Date: 2022-07-26 02:53:41 -0500 (Tue, 26 Jul 2022) $
+@set CRAN_POLICY_REVISION $Revision: 5321 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -96,6 +96,8 @@ this should preferably be indicated via @samp{cph} roles in the
 referring to an @file{inst/COPYRIGHTS} file).
 
 Trademarks must be respected.
+
+('All components' includes any downloaded at installation or during use.)
 
 @item
 The package's @file{DESCRIPTION} file must show both the name and email
@@ -334,7 +336,7 @@ remove other diagnostic information such as symbols in shared objects.
 
 @item
 Security provisions must not be circumvented, for example by not
-verifying SSL certificates.
+verifying SSL/TLS certificates.
 
 @end itemize
 
