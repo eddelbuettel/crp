@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2022-07-26 02:53:41 -0500 (Tue, 26 Jul 2022) $
-@set CRAN_POLICY_REVISION $Revision: 5321 $
+@set CRAN_POLICY_DATE $Date: 2023-07-12 05:12:10 -0500 (Wed, 12 Jul 2023) $
+@set CRAN_POLICY_REVISION $Revision: 5686 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -259,7 +259,7 @@ package installation.  If the sources are too large, it is acceptable to
 download them as part of installation, but do ensure that the download
 is of a fixed version rather than the latest.  Only as a last resort
 and with the agreement of the CRAN team should a package download
-pre-compiled software.
+pre-compiled software. (See also @uref{using_rust.html, Using Rust}.)
 
 On Windows and macOS static libraries must be used. A separate document,
 @uref{external_libs.html, External Libraries for CRAN packages}, covers
