@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2023-07-12 05:12:10 -0500 (Wed, 12 Jul 2023) $
-@set CRAN_POLICY_REVISION $Revision: 5686 $
+@set CRAN_POLICY_DATE $Date: 2023-07-23 04:41:33 -0500 (Sun, 23 Jul 2023) $
+@set CRAN_POLICY_REVISION $Revision: 5709 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -350,8 +350,8 @@ allowed.
 @item
 Downloads of additional software or data as part of package installation
 or startup should only use @emph{secure} download mechanisms (e.g.,
-@samp{https} or @samp{ftps}).  For downloads of more than a few MB,
-ensure that a sufficiently large timeout is set.
+@samp{https}).  For downloads of more than a few MB, ensure that a
+sufficiently large timeout is set.
 
 @end itemize
 
