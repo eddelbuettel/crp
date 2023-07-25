@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2023-07-23 04:41:33 -0500 (Sun, 23 Jul 2023) $
-@set CRAN_POLICY_REVISION $Revision: 5709 $
+@set CRAN_POLICY_DATE $Date: 2023-07-25 05:21:41 -0500 (Tue, 25 Jul 2023) $
+@set CRAN_POLICY_REVISION $Revision: 5711 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -227,6 +227,12 @@ archived in perpetuity).
 
 Similar considerations apply to other forms of ``data'', e.g.,
 @file{.jar} files.
+
+Source package tarballs should if possible not exceed 10MB. It is much
+preferred that third-party source software should be included within the
+package (as e.g.@: a @file{vendor.tar.xz} file) than be downloaded at
+installation: if this requires a larger tarball a modestly increased
+limit can be requested at submission.
 
 @item
 Checking the package should take as little CPU time as possible, as the
