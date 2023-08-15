@@ -9,7 +9,7 @@ download.file(url=polurl, destfile=tmpfile, quiet=TRUE, cacheOK=FALSE)
 pols <- readLines(tmpfile)
 ind <- which(grepl("Version \\$Revision: \\d+ \\$", pols))
 
-rev <- as.numeric(gsub(".*Version \\$Revision: (\\d+) \\$.*", "\\1", pols[ind], perl=TRUE))
+rev <- unique(as.numeric(gsub(".*Version \\$Revision: (\\d+) \\$.*", "\\1", pols[ind], perl=TRUE)))
 
 prvfile <- file.path("html", paste0("policies.r", rev, ".html"))
 if (file.exists(prvfile)) {
@@ -54,7 +54,13 @@ system(cmd)
   ## 540  git push
 
 ## tweet using bti with info in config file
-con <- pipe("bti/bti --config bti/bti.conf", "w")
+#con <- pipe("bti/bti --config bti/bti.conf", "w")
+#cat(sprintf("New CRAN Repository Policy rev%d posted, history at %s #rstats",
+#            rev, "https://github.com/eddelbuettel/crp/tree/master/txt"),
+#    file=con)
+#close(con)
+## toot using toot with prior oauthi
+con <- pipe("toot post --using CRANPolicyWatch@fosstodon.org --quiet", "w")
 cat(sprintf("New CRAN Repository Policy rev%d posted, history at %s #rstats",
             rev, "https://github.com/eddelbuettel/crp/tree/master/txt"),
     file=con)
