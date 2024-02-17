@@ -4,8 +4,8 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2023-07-25 05:21:41 -0500 (Tue, 25 Jul 2023) $
-@set CRAN_POLICY_REVISION $Revision: 5711 $
+@set CRAN_POLICY_DATE $Date: 2023-11-28 23:55:09 -0600 (Tue, 28 Nov 2023) $
+@set CRAN_POLICY_REVISION $Revision: 5892 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -439,6 +439,15 @@ part of your covering email, or as a comment on the submission form.
 For interpretation of the URL checks, see @uref{URL_checks.html}.
 
 @item
+Authors can avoid a lot of the all too frequent rounds of updates by
+checking carefully for themselves.  It should be normal for those
+without Windows machines of their own to use the
+@url{https://win-builder.R-project.org/, winbuilder} service to
+check a package before submission.  There is a lot of helpful advice on
+writing portable packages in @url{../../manuals.html#R-exts,
+``Writing R Extensions''}.
+
+@item
 For a package update, please check that any packages depending on this
 one still pass @command{R CMD check}: it is especially expected that you
 will have checked your own packages.  Reverse dependencies can
@@ -482,39 +491,6 @@ few days) and you have not received a reply from a CRAN maintainer.
 @c resubmission from the package maintainer (and such a file name should 
 @c never be uploaded).
 
-@item
-Submitting updates should be done responsibly and with respect for the
-volunteers' time.  Once a package is established (which may take several
-rounds), ``no more than every 1--2 months'' seems appropriate.
-
-Authors can avoid a lot of the all too frequent rounds of updates by
-checking carefully for themselves.  It should be normal for those
-without Windows machines of their own to use the
-@url{https://win-builder.R-project.org/, winbuilder} service to
-check a package before submission.  There is a lot of helpful advice on
-writing portable packages in @url{../../manuals.html#R-exts,
-``Writing R Extensions''}.
-
-Before submitting a package update, consult the CRAN check page at
-@samp{https://CRAN.R-project.org/web/checks/check_results_NAME.html},
-substituting NAME by the name of your package.  In particular, wait for
-that page to be fully updated after publication of a version (which can
-take at least 48 hours) before submitting any corrections.
-
-@item
-If an update will change the package's API and hence affect packages
-depending on it, it is expected that you will contact the maintainers of
-affected packages and suggest changes, and give them time (at least 2
-weeks, ideally more) to prepare
-updates before submitting your updated package.  Do mention in
-the submission email which packages are affected and that their
-maintainers have been informed.
-In order to derive the reverse dependencies of a package including the 
-addresses of maintainers who have to be notified upon changes, the 
-function @url{https://developer.R-project.org/CRAN/Scripts/depends.R, 
-reverse_dependencies_with_maintainers} is available from the developer 
-website. 
-
 @end itemize
 
 @node Re-submission,  , Submission, Top
@@ -534,6 +510,23 @@ accepted.
 @c requirements (such as new packages in @samp{Depends}, @samp{Imports} or
 @c @samp{LinkingTo} rather than @samp{Suggests}).
 
+
+In more detail:
+
+@itemize
+
+@item
+Submitting updates should be done responsibly and with respect for the
+volunteers' time.  Once a package is established (which may take several
+rounds), ``no more than every 1--2 months'' seems appropriate.
+
+@item
+Before submitting a package update, consult the CRAN check page at
+@samp{https://CRAN.R-project.org/web/checks/check_results_NAME.html},
+substituting NAME by the name of your package.  In particular, wait for
+that page to be fully updated after publication of a version (which can
+take at least 48 hours) before submitting any corrections.
+
 For packages which have been archived since February 2018, a snapshot of
 the CRAN results page at the time of archival will be available under
 @uref{https://cran-archive.r-project.org/web/checks/}.  (Note that only
@@ -544,5 +537,21 @@ A package showing issues for @code{macos-arm64} or an `M1mac' additional
 issue should be checked using the
 @url{https://mac.r-project.org/macbuilder/submit.html, macbuilder}
 service prior to re-submission.
+
+@item
+If an update will change the package's API and hence affect packages
+depending on it, it is expected that you will contact the maintainers of
+affected packages and suggest changes, and give them time (at least 2
+weeks, ideally more) to prepare
+updates before submitting your updated package.  Do mention in
+the submission email which packages are affected and that their
+maintainers have been informed.
+In order to derive the reverse dependencies of a package including the 
+addresses of maintainers who have to be notified upon changes, the 
+function @url{https://developer.R-project.org/CRAN/Scripts/depends.R, 
+reverse_dependencies_with_maintainers} is available from the developer 
+website. 
+
+@end itemize
 
 @bye
