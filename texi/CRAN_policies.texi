@@ -4,8 +4,10 @@
 @settitle CRAN Repository Policy
 @documentlanguage en
 
-@set CRAN_POLICY_DATE $Date: 2023-11-28 23:55:09 -0600 (Tue, 28 Nov 2023) $
-@set CRAN_POLICY_REVISION $Revision: 5892 $
+@include macros.texi
+
+@set CRAN_POLICY_DATE $Date: 2024-03-05 03:08:56 -0600 (Tue, 05 Mar 2024) $
+@set CRAN_POLICY_REVISION $Revision: 6097 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -50,7 +52,7 @@ package repository} will be referred to as ``CRAN''.
 CRAN is maintained by the efforts of volunteers (the ``CRAN team'') and
 the resources of the @url{https://www.R-project.org/foundation/index.html,
 R Foundation} and the employers of those volunteers
-(WU Wien, TU Dortmund, U Oxford, U Auckland).  Having a package
+(@I{WU Wien}, @I{TU Dortmund}, @I{U Oxford}, @I{U Auckland}).  Having a package
 distributed by CRAN is subject to a set of policies, and submitting a
 package (including an update) to CRAN indicates agreement to these
 policies.
@@ -119,7 +121,7 @@ addresses for contacting the package authors/developers (e.g.,
 @samp{BugReports}).
 
 Citations in the @samp{Description} field of the @file{DESCRIPTION} file
-should be in author-year style, followed by a DOI or ISBN for published
+should be in author-year style, followed by a @abbr{DOI} or @abbr{ISBN} for published
 materials, or a URL otherwise.  Preferably, the year and identifier
 would be enclosed, respectively, in parentheses and angle brackets.
 
@@ -191,7 +193,7 @@ although this is discouraged.
 
 @item
 CRAN versions of packages should work with the current CRAN and
-Bioconductor releases of packages they depend on and not anticipate nor
+@I{Bioconductor} releases of packages they depend on and not anticipate nor
 recommend development versions of such packages (or themselves) on other
 repositories.
 
@@ -256,7 +258,7 @@ not give a check warning nor error).
 
 @item
 @c We have seen rust libraries.
-(@strong{Using external C/C++/Fortran/other libraries.})  Where a package
+(@strong{Using external C/C++/@I{Fortran}/other libraries.})  Where a package
 wishes to make use of a library not written solely for the package, the
 package installation should first look to see if it is already installed
 and if so is of a suitable version.  In case not, it is desirable to
@@ -267,7 +269,7 @@ is of a fixed version rather than the latest.  Only as a last resort
 and with the agreement of the CRAN team should a package download
 pre-compiled software. (See also @uref{using_rust.html, Using Rust}.)
 
-On Windows and macOS static libraries must be used. A separate document,
+On Windows and @I{macOS} static libraries must be used. A separate document,
 @uref{external_libs.html, External Libraries for CRAN packages}, covers
 what external libraries are or could be made available.
 
@@ -281,7 +283,7 @@ illustrative examples from past experience.
 @item
 Compiled code should never terminate the R process within which it is
 running.  Thus C/C++ calls to
-@code{assert}/@code{abort}/@code{exit}/@code{std::terminate}, Fortran
+@code{assert}/@code{abort}/@code{exit}/@code{std::terminate}, @I{Fortran}
 calls to @code{STOP} and so on must be avoided.  Nor may R code call
 @code{q()}.
 
@@ -342,7 +344,7 @@ remove other diagnostic information such as symbols in shared objects.
 
 @item
 Security provisions must not be circumvented, for example by not
-verifying SSL/TLS certificates.
+verifying @abbr{SSL}/@abbr{TLS} certificates.
 
 @end itemize
 
@@ -364,7 +366,7 @@ sufficiently large timeout is set.
 @node Binary packages, Submission, Source packages, Top
 @unnumbered Binary packages
 
-Policies for when a (Windows or macOS) binary package will be distributed:
+Policies for when a (Windows or @I{macOS}) binary package will be distributed:
 
 @itemize
 
@@ -394,10 +396,10 @@ mirrors).
 
 Binary packages are built for the current version of R: they may also be
 built for the last version in the previous series (e.g.@: R 3.1.3 when R
-3.2.x is current) or for R-devel.
+3.2.x is current) or for @I{R-devel}.
 
 Questions about binary packages should be addressed to those responsible
-for building them: Simon Urbanek (macOS) and Uwe Ligges (Windows); email
+for building them: @I{Simon Urbanek} (@I{macOS}) and @I{Uwe Ligges} (Windows); email
 addresses @samp{@var{First.Lastname}@@R-project.org}.
 
 @node Submission, Re-submission, Binary packages, Top
@@ -424,7 +426,7 @@ This should be done with current R-patched or the current release of R.
 @item
 Please ensure that @command{R CMD check --as-cran} has been run @emph{on
 the tarball to be uploaded} before submission.  This should be done with
-the current version of R-devel (or if that is not possible and explained
+the current version of @I{R-devel} (or if that is not possible and explained
 in the submission, current R-patched or the current release of R.)
 For new submissions in particular, please take care to include an
 informative @code{Description} field. See
