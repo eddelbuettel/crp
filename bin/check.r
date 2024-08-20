@@ -60,7 +60,7 @@ system(cmd)
 #    file=con)
 #close(con)
 ## toot using toot with prior oauthi
-con <- pipe("toot post --using CRANPolicyWatch@fosstodon.org --quiet", "w")
+con <- pipe("toot post --using CRANPolicyWatch@fosstodon.org", "w")
 cat(sprintf("New CRAN Repository Policy rev%d posted, history at %s #rstats",
             rev, "https://github.com/eddelbuettel/crp/tree/master/txt"),
     file=con)
