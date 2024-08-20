@@ -6,8 +6,8 @@
 
 @include macros.texi
 
-@set CRAN_POLICY_DATE $Date: 2024-03-05 03:08:56 -0600 (Tue, 05 Mar 2024) $
-@set CRAN_POLICY_REVISION $Revision: 6097 $
+@set CRAN_POLICY_DATE $Date: 2024-08-20 08:34:28 -0500 (Tue, 20 Aug 2024) $
+@set CRAN_POLICY_REVISION $Revision: 6277 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -345,6 +345,12 @@ remove other diagnostic information such as symbols in shared objects.
 @item
 Security provisions must not be circumvented, for example by not
 verifying @abbr{SSL}/@abbr{TLS} certificates.
+
+@item
+Use of external resources such as websites must be kept to a minimum.
+In particular, `rate limit' errors for websites (such as HTTP codes 429
+and 403) must be avoided (and do bear in mind that other packages may be
+using the same resource).
 
 @end itemize
 
