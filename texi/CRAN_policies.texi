@@ -6,8 +6,8 @@
 
 @include macros.texi
 
-@set CRAN_POLICY_DATE $Date: 2024-08-20 08:34:28 -0500 (Tue, 20 Aug 2024) $
-@set CRAN_POLICY_REVISION $Revision: 6277 $
+@set CRAN_POLICY_DATE $Date: 2024-08-27 03:50:13 -0500 (Tue, 27 Aug 2024) $
+@set CRAN_POLICY_REVISION $Revision: 6286 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -167,6 +167,8 @@ consulted), nor any current @url{https://www.bioconductor.org/,
 Bioconductor} package.  Package maintainers give the right to use that
 package name to CRAN when they submit, so the CRAN team may orphan a
 package and allow another maintainer to take it over.
+Package names on CRAN are persistent and in general it is not permitted 
+to change a package's name.
 
 When a new maintainer wishes to take over a package, this should be
 accompanied by the written agreement of the previous maintainer
