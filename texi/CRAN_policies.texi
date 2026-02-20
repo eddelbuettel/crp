@@ -6,8 +6,8 @@
 
 @include macros.texi
 
-@set CRAN_POLICY_DATE $Date: 2024-08-27 03:50:13 -0500 (Tue, 27 Aug 2024) $
-@set CRAN_POLICY_REVISION $Revision: 6286 $
+@set CRAN_POLICY_DATE $Date: 2025-12-19 09:47:59 -0600 (Fri, 19 Dec 2025) $
+@set CRAN_POLICY_REVISION $Revision: 6738 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -176,9 +176,12 @@ accompanied by the written agreement of the previous maintainer
 
 @item
 Packages on which a CRAN package depends should be available from a
-mainstream repository: if any mentioned in @samp{Suggests} or
-@samp{Enhances} fields are not from such a repository, where to obtain
-them at a repository should be specified in an
+standard repository.  The strong dependencies (i.e., packages listed in
+the @samp{Depends}, @samp{Imports} or @samp{LinkingTo} fields) should be
+available from CRAN or the @I{Bioconductor} software repository.  If any
+mentioned in @samp{Suggests} or @samp{Enhances} fields are not from one
+of these or the @I{Bioconductor} annotation and experiment data repositories,
+where to obtain them at a repository should be specified in an
 @samp{Additional_repositories} field of the @file{DESCRIPTION} file (as
 a comma-separated list of repository URLs) or for other means of access,
 described in the @samp{Description} field.
