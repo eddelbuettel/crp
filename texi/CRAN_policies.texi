@@ -6,8 +6,8 @@
 
 @include macros.texi
 
-@set CRAN_POLICY_DATE $Date: 2025-12-19 09:47:59 -0600 (Fri, 19 Dec 2025) $
-@set CRAN_POLICY_REVISION $Revision: 6738 $
+@set CRAN_POLICY_DATE $Date: 2026-04-13 04:50:30 -0500 (Mon, 13 Apr 2026) $
+@set CRAN_POLICY_REVISION $Revision: 6846 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -28,7 +28,7 @@
 
 @center @b{CRAN Repository Maintainers}
 
-@node Top, Preamble, (dir), (dir)
+@node Top, Preamble
 
 @menu
 * Preamble::                    
