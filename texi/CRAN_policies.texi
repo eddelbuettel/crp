@@ -6,8 +6,8 @@
 
 @include macros.texi
 
-@set CRAN_POLICY_DATE $Date: 2026-04-13 04:50:30 -0500 (Mon, 13 Apr 2026) $
-@set CRAN_POLICY_REVISION $Revision: 6846 $
+@set CRAN_POLICY_DATE $Date: 2026-05-31 01:22:11 -0500 (Sun, 31 May 2026) $
+@set CRAN_POLICY_REVISION $Revision: 6875 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -406,8 +406,8 @@ or two to appear on the CRAN master site (maybe longer to reach CRAN
 mirrors).
 
 Binary packages are built for the current version of R: they may also be
-built for the last version in the previous series (e.g.@: R 3.1.3 when R
-3.2.x is current) or for @I{R-devel}.
+built for the last version in the previous series (e.g.@: R 3.5.3 when R
+3.6.x is current) or for @I{R-devel}.
 
 Questions about binary packages should be addressed to those responsible
 for building them: @I{Simon Urbanek} (@I{macOS}) and @I{Uwe Ligges} (Windows); email
