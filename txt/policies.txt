@@ -3,13 +3,13 @@
 
                              CRAN Repository Policy
 
-  Version $Revision: 6875 $
+  Version $Revision: 6985 $
 
    CRAN Repository Maintainers
 
      ----------------------------------------------------------------------
 
-   Version $Revision: 6875 $
+   Version $Revision: 6985 $
    CRAN Repository Maintainers
 
    Next: Preamble  
@@ -215,7 +215,8 @@ Source packages ¶
 
      * Packages which use Internet resources should fail gracefully with an
        informative message if the resource is not available or has changed
-       (and not give a check warning nor error).
+       (and not give a check warning nor error). (This includes accessing
+       ports on localhost.)
      * (Using external C/C++/Fortran/other libraries.) Where a package wishes
        to make use of a library not written solely for the package, the
        package installation should first look to see if it is already
@@ -269,6 +270,8 @@ Source packages ¶
           * Packages should not send information about the R session to the
             maintainer’s or third-party sites without obtaining confirmation
             from the user.
+          * Packages should not contain nor display material which might be
+            considered divisive or give offence, such as political slogans.
           * Packages must not disable the stack-checking mechanism in the R
             process into which they are loaded.
           * CRAN packages should use only the public API. Hence they should

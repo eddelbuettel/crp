@@ -6,8 +6,8 @@
 
 @include macros.texi
 
-@set CRAN_POLICY_DATE $Date: 2026-05-31 01:22:11 -0500 (Sun, 31 May 2026) $
-@set CRAN_POLICY_REVISION $Revision: 6875 $
+@set CRAN_POLICY_DATE $Date: 2026-10-25 04:50:13 -0500 (Sun, 25 Oct 2026) $
+@set CRAN_POLICY_REVISION $Revision: 6985 $
 
 @titlepage
 @title CRAN Repository Policy
@@ -259,7 +259,8 @@ the package.
 @item
 Packages which use Internet resources should fail gracefully with an
 informative message if the resource is not available or has changed (and
-not give a check warning nor error).
+not give a check warning nor error).  (This includes accessing ports on
+@code{localhost}.)
 
 @item
 @c We have seen rust libraries.
@@ -329,6 +330,10 @@ the software is explicitly closed afterwards.
 Packages should not send information about the R session to the
 maintainer's or third-party sites without obtaining confirmation from
 the user.
+
+@item
+Packages should not contain nor display material which might be
+considered divisive or give offence, such as political slogans.
 
 @item
 Packages must not disable the stack-checking mechanism in the R process

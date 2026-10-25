@@ -59,14 +59,14 @@ p {
 
 <body lang="en">
 <h1 class="title">CRAN Repository Policy</h1>
-<h3 class="subtitle">Version $Revision: 6875 $</h3>
+<h3 class="subtitle">Version $Revision: 6985 $</h3>
 <strong class="author">CRAN Repository Maintainers</strong><br>
 <hr>
 
 
 
 
-<div class="center">Version $Revision: 6875 $
+<div class="center">Version $Revision: 6985 $
 </div>
 <div class="center"><b class="b">CRAN Repository Maintainers</b>
 </div>
@@ -287,7 +287,8 @@ the package.
 </p>
 </li><li>Packages which use Internet resources should fail gracefully with an
 informative message if the resource is not available or has changed (and
-not give a check warning nor error).
+not give a check warning nor error).  (This includes accessing ports on
+<code class="code">localhost</code>.)
 
 </li><li>(<strong class="strong">Using external C/C++/Fortran/other libraries.</strong>)  Where a package
 wishes to make use of a library not written solely for the package, the
@@ -347,6 +348,9 @@ the software is explicitly closed afterwards.
 </li><li>Packages should not send information about the R session to the
 maintainer&rsquo;s or third-party sites without obtaining confirmation from
 the user.
+
+</li><li>Packages should not contain nor display material which might be
+considered divisive or give offence, such as political slogans.
 
 </li><li>Packages must not disable the stack-checking mechanism in the R process
 into which they are loaded.
